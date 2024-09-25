@@ -1,0 +1,43 @@
+@import 'scss/vars.scss';
+@import 'scss/common.scss';
+@import 'scss/mixin.scss';
+@import 'scss/fonts.scss';
+
+:root {
+  --mobile-width-breakpoint: 776px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  position: static;
+}
+
+html, body {
+  background-color: $color-white;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: $font;
+  color: $color-black;
+
+  overflow-x: clip;
+}
+
+a {
+  color: $color-black;
+}
+
+#app {
+  margin: 0 auto;
+  padding: $gutter;
+}
+
+img {
+  border-style: none;
+  vertical-align: middle;
+}

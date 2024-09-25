@@ -1,0 +1,20 @@
+@mixin pad($top, $bottom) {
+  padding-top: $top; // Compensation
+  padding-bottom: $bottom; // Compensation
+}
+
+@mixin mobile {
+  @media screen and (max-width: $MOBILE-BREAKPOINT) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $MOBILE-BREAKPOINT + 1) {
+    @content;
+  }
+}
+
+@function grid($n: 1) {
+  @return $n * $grid + ($n - 1) * $gutter;
+}

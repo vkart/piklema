@@ -1,0 +1,6 @@
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="currentColor">
+    <rect width="36.2187" height="4.00983" transform="matrix(0.571597 0.820535 -0.822464 0.568817 3.29834 0)" fill="black"/>
+    <rect width="36.2187" height="4.00983" transform="matrix(-0.571597 0.820535 0.822464 0.568817 20.7017 0)" fill="black"/>
+  </svg>
+</template>
