@@ -82,7 +82,7 @@ export default {
   flex: 1;
   display: flex;
   gap: $gutter;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: flex-end;
 }
 

@@ -35,13 +35,8 @@ export default {
 .Menu-Container {
   display: flex;
   gap: $gutter;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: flex-end;
-}
-
-@include mobile {
-  .Menu-Container {
-    flex-wrap: wrap;
-  }
 }
 </style>
