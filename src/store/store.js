@@ -1,11 +1,13 @@
 import { reactive } from 'vue';
 
-const DEFAULT_LANG = 'en';
+const DEFAULT_LANG = 'ru';
 
 export const store = reactive({
   lang: DEFAULT_LANG,
   pageName: undefined,
   menuMode: 'normal',
+  slides: null,
+  currentSlide: null,
 
   setLang (lang) {
     this.lang = lang;
@@ -18,5 +20,9 @@ export const store = reactive({
   },
   removePageName () {
     this.pageName = undefined;
+  },
+  slideshow (slides, selected) {
+    this.slides = slides;
+    this.currentSlide = slides ? selected || slides[0] : null;
   }
 });

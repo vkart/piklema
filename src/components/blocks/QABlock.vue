@@ -7,9 +7,8 @@
   >
     <Image
       class="Block-Image"
-      :image="block.image"
-      :size="block.image.size"
-      v-if="block.image"
+      :image="block.author.avatar"
+      v-if="block.authorType === 'full'"
     />
     <span class="Block-Author" :data-author-type="block.authorType">
       <Localized :text="block.author[block.authorType || 'full']" />
@@ -39,7 +38,11 @@ export default {
 @import '@/assets/scss/common.scss';
 
 .Block-Content[data-type="Question"] {
-  @include Caption-Intro;
+  @include Body-2;
+}
+
+.Block-Content[data-type="Answer"] {
+  @include Body-1;
 }
 
 .Block-Author[data-author-type="full"] {
@@ -47,37 +50,32 @@ export default {
 }
 
 @include desktop {
-  .Block-Content {
-    @include Body-2;
-    @include pad(13px, 15px);
-  }
-
   .Block-Image {
     position: absolute;
     left: 0;
     margin-top: 7px;
+    width: 72px;
+    height: 72px;
+    display: none;
+  }
 
-    &[data-size="intro-type-1"] {
-      width: 72px;
-      height: 72px;
+  .Block-Content {
+    width: grid(34);
+    margin: 0 auto;
+  }
+
+  .Block-Content:hover {
+    .Block-Image {
+      display: block;
     }
-    &[data-size="intro-type-2"] {
-      width: 72px;
-      height: 100px;
-    }
-    &[data-size="intro-type-3"] {
-      width: 100px;
-      height: 72px;
+    .Block-Author[data-author-type="full"] {
+      color: $color-red;
+      text-decoration: none;
     }
   }
 }
 
 @include mobile {
-  .Block-Content {
-    @include Body-2(Mobile);
-    @include pad(13px, 15px);
-  }
-
   .Block-Image {
     display: none;
   }

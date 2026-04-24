@@ -5,31 +5,99 @@ export default [{
     ru: 'шрифты',
     en: 'fonts'
   },
-  href: '/fonts'
+  color: 'black',
+  radius: 'none',
+  items: [{
+    name: {
+      ru: 'plastinka',
+      en: 'plastinka'
+    },
+    radius: 'none',
+    href: '/fonts/plastinka'
+  }, {
+    name: {
+      ru: 'plastinka',
+      en: 'plastinka'
+    },
+    radius: 'none',
+    href: '/fonts/plastinka-2'
+  }, {
+    name: {
+      ru: 'plastinka',
+      en: 'plastinka'
+    },
+    radius: 'none',
+    href: '/fonts/plastinka-2'
+  }, {
+    name: {
+      ru: 'plastinka',
+      en: 'plastinka'
+    },
+    radius: 'none',
+    href: '/fonts/plastinka-2'
+  }, {
+    name: {
+      ru: 'plastinka',
+      en: 'plastinka'
+    },
+    radius: 'none',
+    href: '/fonts/plastinka-2'
+  }, {
+    name: {
+      ru: 'plastinka',
+      en: 'plastinka'
+    },
+    radius: 'none',
+    href: '/fonts/plastinka-2'
+  }, {
+    name: {
+      ru: 'plastinka',
+      en: 'plastinka'
+    },
+    radius: 'none',
+    href: '/fonts/plastinka-2'
+  }, {
+    name: {
+      ru: 'plastinka',
+      en: 'plastinka'
+    },
+    radius: 'none',
+    href: '/fonts/plastinka-2'
+  }, {
+    name: {
+      ru: 'plastinka',
+      en: 'plastinka'
+    },
+    radius: 'none',
+    href: '/fonts/plastinka-2'
+  }]
 }, {
   name: {
     ru: 'на заказ',
     en: 'custom'
   },
-  href: '/custom'
+  radius: 'round',
+  href: '/cases'
 }, {
   name: {
     ru: 'интро',
     en: 'intro'
   },
+  radius: 'round',
   href: '/intro'
 }, {
   name: {
     ru: 'lab',
     en: 'lab'
   },
-  color: 'black',
-  radius: 'none',
+  color: 'blue',
+  radius: 'round',
   href: '/lab'
 }, {
   name: {
     ru: 't&c',
     en: 't&c'
   },
-  href: '/tnc'
+  radius: 'round',
+  href: '/terms'
 }];

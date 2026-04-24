@@ -2,7 +2,7 @@
   <header class="Header">
     <div class="Header-Row">
       <div class="Header-Logo">
-        <a href="/"><img src="@/assets/images/ptf-logo-80px.svg" width="235" height="80" alt="" /></a>
+        <a href="/"><img src="@/assets/images/ptf-logo-72px.svg" width="292" height="72" alt="" /></a>
       </div>
       <div class="Header-Col">
         <Menu
@@ -12,7 +12,7 @@
           v-show="!compact || menuOpen"
         />
         <Button
-          type="icon"
+          type="Icon"
           :icon="menuOpen ? 'Close' : 'Menu'"
           @click.stop="toggleMenu"
           v-if="compact"
@@ -65,23 +65,28 @@ export default {
 
 .Header {
   position: relative;
-  padding-bottom: $gutter;
+  padding-bottom: $microgrid;
   z-index: 10;
 }
 
 .Header-Row {
   display: flex;
   gap: $gutter;
+  background-color: $color-white;
 }
 
 .Header-Logo {
-  flex: 0 0 320px;
+  flex: 0 0 240px;
+  mix-blend-mode: exclusion;
+  position: fixed;
+  z-index: auto;
+  opacity: 0;
 }
 
 .Header-Col {
   flex: 1;
   display: flex;
-  gap: $gutter;
+  gap: $microgrid;
   align-items: flex-start;
   justify-content: flex-end;
 }
@@ -91,6 +96,6 @@ export default {
   align-items: flex-end;
   justify-content: flex-end;
   display: flex;
-  gap: $gutter;
+  gap: $microgrid;
 }
 </style>

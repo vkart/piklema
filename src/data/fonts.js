@@ -4,7 +4,5 @@ export default [
   plastinka,
   plastinka,
   plastinka,
-  plastinka,
-  plastinka,
   plastinka
 ];

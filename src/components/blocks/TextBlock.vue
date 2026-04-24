@@ -2,7 +2,7 @@
   <div
     class="Block-Content"
     :data-modifier="block.modifier"
-    :data-mode="block.mode"
+    :data-mode="block.mode || 'body'"
   >
     <template v-if="block.href">
       <a :href="block.href" :target="block.target"><Localized :text="block.text" /></a>
@@ -28,26 +28,51 @@ export default {
 };
 </script>
 
-<style>
-.Block[data-type="Image"] + .Block[data-type="Text"] {
-  margin-top: 20px;
-}
-</style>
-
 <style scoped lang="scss">
 @import '@/assets/scss/common.scss';
 
+.Block-Content {
+  ::v-deep em {
+    @include Em;
+  }
+
+  &[data-mode="credits"] {
+    @include Interface;
+
+    text-transform: uppercase;
+
+    width: auto;
+    padding: 6px 0;
+    background-color: $color-grey;
+  }
+
+  &[data-mode="title"] {
+    margin: auto;
+    text-align: center;
+    padding-top: 2 * $microgrid;
+    @include Emphasis;
+  }
+
+  &[data-mode="tiny"] {
+    @include Emphasis;
+    @include fixed-width;
+  }
+
+  &[data-modifier="center"] {
+    margin: auto;
+  }
+}
+
 @include desktop {
-  .Block-Content {
+  .Block-Content[data-mode="body"] {
     @include Body-1;
-    @include pad(7px, 13px);
+    @include fixed-width;
   }
 }
 
 @include mobile {
-  .Block-Content {
+  .Block-Content[data-mode="body"] {
     @include Body-1(Mobile);
-    @include pad(7px, 13px);
   }
 }
 </style>

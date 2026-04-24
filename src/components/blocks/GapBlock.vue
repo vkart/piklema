@@ -3,7 +3,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'GapBlock',
   props: {

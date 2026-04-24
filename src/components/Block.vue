@@ -9,6 +9,10 @@
       <TextBlock :block="block" />
     </template>
 
+    <template v-if="block.type === 'Quote'">
+      <QuoteBlock :block="block" />
+    </template>
+
     <template v-if="block.type === 'Question'">
       <QABlock :block="block" />
     </template>
@@ -32,25 +36,34 @@
     <template v-else-if="block.type === 'Gap'">
       <GapBlock :block="block" />
     </template>
+
+    <template v-else-if="block.type === 'Button'">
+      <ButtonBlock :block="block" />
+    </template>
   </div>
 </template>
 
 <script>
+import ButtonBlock from '@/components/blocks/ButtonBlock.vue';
 import CollapsibleBlock from '@/components/blocks/CollapsibleBlock.vue';
 import GapBlock from '@/components/blocks/GapBlock.vue';
 import ImageBlock from '@/components/blocks/ImageBlock.vue';
 import TextBlock from '@/components/blocks/TextBlock.vue';
 import HeaderBlock from '@/components/blocks/HeaderBlock.vue';
+import QuoteBlock from '@/components/blocks/QuoteBlock.vue';
 import QABlock from '@/components/blocks/QABlock.vue';
 
 export default {
   name: 'Block',
+  inheritAttrs: true,
   components: {
+    ButtonBlock,
     CollapsibleBlock,
     GapBlock,
     ImageBlock,
     TextBlock,
     HeaderBlock,
+    QuoteBlock,
     QABlock
   },
   props: {

@@ -1,7 +1,9 @@
 $MOBILE-BREAKPOINT: 776px;
 
-$grid: 24px;
-$gutter: 4px;
+$microgrid: 4px;
+$grid: 16px;
+$gutter: 12px;
+$gap: $grid + 2 * $gutter;
 
 $app-width-mobile: 390px;
 

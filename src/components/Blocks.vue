@@ -10,6 +10,7 @@
         v-else-if="block.type === 'Grid'"
         :key="block.id"
         :blocks="block.items"
+        :props="block"
       />
       <Block v-else :key="block.id" :block="block" />
     </template>

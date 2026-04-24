@@ -6,7 +6,7 @@
       color="pink"
       radius="none"
     />
-    <Button :href="font.specimen.href" hrefTarget="_blank">specimen</Button>
+    <Button :href="font.specimen.href" hrefTarget="_blank">spec</Button>
     <Button>trial</Button>
     <Button>buy</Button>
   </div>
@@ -30,13 +30,13 @@ export default {
 @import '@/assets/scss/common.scss';
 
 .FontMenu {
-  position: absolute;
   left: $gutter;
   right: $gutter;
   z-index: 10;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: $gutter;
+  gap: $microgrid;
+  padding-bottom: $microgrid;
 }
 </style>

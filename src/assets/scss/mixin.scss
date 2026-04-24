@@ -3,6 +3,22 @@
   padding-bottom: $bottom; // Compensation
 }
 
+@mixin text-compensation($top, $bottom) {
+  &:before {
+    margin-top: $top;
+    display: block;
+    content: '';
+    height: 0px;
+  }
+
+  &:after {
+    margin-top: $bottom;
+    display: block;
+    content: '';
+    height: 0px;
+  }
+}
+
 @mixin mobile {
   @media screen and (max-width: $MOBILE-BREAKPOINT) {
     @content;
@@ -13,6 +29,20 @@
   @media screen and (min-width: $MOBILE-BREAKPOINT + 1) {
     @content;
   }
+}
+
+@mixin image($orientation: vertical, $ratio) {
+  height: calc(var(--size) * $grid + (var(--size) - 1) * $gutter);
+
+  @if $orientation == vertical {
+    width: round((var(--size) * $grid + (var(--size) - 1) * $gutter) / $ratio, 8px);
+  } @else {
+
+  }
+}
+
+@mixin fixed-width {
+  width: grid(38);
 }
 
 @function grid($n: 1) {

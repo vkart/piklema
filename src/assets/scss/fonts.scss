@@ -27,6 +27,20 @@
 }
 
 @font-face {
+  font-family: "Typewriter Test";
+  font-weight: 400;
+  font-style: normal;
+  src: url("@/assets/fonts/TypewriterTest-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Typewriter Test";
+  font-weight: 700;
+  font-style: normal;
+  src: url("@/assets/fonts/TypewriterTest-Black.otf") format("opentype");
+}
+
+@font-face {
   font-family: "Polymer";
   font-weight: 400;
   font-style: normal;

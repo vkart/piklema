@@ -1,7 +1,9 @@
 <template>
   <metainfo />
+  <Logo />
   <Header />
   <RouterView />
+  <Slideshow />
   <Footer />
 </template>
 
@@ -9,15 +11,25 @@
 import { RouterView } from 'vue-router';
 import { useMeta } from 'vue-meta';
 import { store } from './store/store';
+
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
+import Logo from '@/components/Logo.vue';
+import Slideshow from '@/components/Slideshow.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer,
+    Logo,
+    Slideshow,
     RouterView
+  },
+  data () {
+    return {
+      store
+    };
   },
   setup () {
     useMeta({

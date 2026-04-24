@@ -1,5 +1,9 @@
 <template>
-  <div class="Grid">
+  <div
+    class="Grid"
+    :data-modifier="props.modifier"
+    :data-background="props.background"
+  >
     <Block
       v-for="block in blocks"
       :key="block.id"
@@ -17,9 +21,9 @@ export default {
   components: {
     Block
   },
-
   props: {
-    blocks: Array
+    blocks: Array,
+    props: Object
   }
 };
 </script>
@@ -30,7 +34,24 @@ export default {
 .Grid {
   display: flex;
   flex-wrap: wrap;
-  gap: $gutter;
+  gap: 2 * $gutter + $grid;
+
+  &[data-modifier="fixed-width"] {
+    @include fixed-width;
+    margin: auto;
+  }
+
+  &[data-modifier="center"] {
+    justify-content: center;
+  }
+
+  &[data-background="grey"] {
+    background-color: $color-grey;
+  }
+
+  &[data-background="yellow"] {
+    background-color: $color-yellow;
+  }
 }
 
 .Grid-Block {

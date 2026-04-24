@@ -1,32 +1,90 @@
 @mixin Body-1($device: Desktop) {
-  font-family: "Typewriter";
+  font-family: "Typewriter Test";
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
   text-transform: none;
 
-  font-size: 22.8px;
-  line-height: 32px;
+  font-size: 22.4px;
+  line-height: 28px;
+
+  @include text-compensation(-7px, -5px);
 
   ::v-deep p + p {
-    margin-top: 32px;
+    margin-top: 28px;
   }
 }
 
 @mixin Body-2($device: Desktop) {
-  font-family: "Typewriter";
+  font-family: "Typewriter Test";
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+
+  font-size: 22.4px;
+  line-height: 28px;
+
+  @include text-compensation(-7px, -5px);
+
+  ::v-deep p + p {
+    margin-top: 28px;
+  }
+}
+
+@mixin Em($device: Desktop) {
+  font-family: "Typewriter Test";
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
   text-transform: none;
 
-  font-size: 22.8px;
+  font-size: 11.4px;
   line-height: 28px;
 
   ::v-deep p + p {
     margin-top: 28px;
   }
 }
+
+@mixin Emphasis($device: Desktop) {
+  @include Em;
+  @include text-compensation(-11px, -9px);
+}
+
+@mixin Interface($device: Desktop) {
+  font-family: "Typewriter-V1";
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+
+  font-size: 22.4px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+
+  @include text-compensation(-7px, -5px);
+
+  ::v-deep p + p {
+    margin-top: 28px;
+  }
+}
+
+@mixin Caption($device: Desktop) {
+  font-family: "Typewriter-V1";
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+
+  font-size: 11.4px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+
+  @include text-compensation(-5px, -3px);
+}
+
+/* OLD STYLES TO BE CHECKED  */
 
 @mixin Caption-Intro($device: Desktop) {
   font-family: "Typewriter-V1";
@@ -60,8 +118,8 @@
   text-transform: none;
   text-transform: lowercase;
 
-  font-size: 64px;
-  line-height: 72px;
+  font-size: 55px;
+  line-height: 56px;
   letter-spacing: -0.02em;
 }
 

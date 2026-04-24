@@ -5,9 +5,19 @@
         v-for="item in menu"
         :key="item.id"
         :item="item"
-        :selected="item.href === $route.path"
+        :selected="isSelected(item)"
+        @click="onClick"
       />
       <Language v-if="language" />
+    </div>
+    <div class="Menu-Container" data-device="desktop" v-if="submenu">
+      <MenuItem
+        v-for="item in submenu"
+        :key="item.id"
+        :item="item"
+        :selected="isSelected(item)"
+        @click="onClick"
+      />
     </div>
   </div>
 </template>
@@ -25,6 +35,40 @@ export default {
   props: {
     menu: Array,
     language: Boolean
+  },
+  emits: ['click'],
+  data () {
+    const selected = this.menu.find(this.isSelected);
+
+    return {
+      submenu: null,
+      selected
+    };
+  },
+  methods: {
+    onClick (item) {
+      const isSubmenuOpen = this.submenu === item.items;
+
+      this.submenu = null;
+
+      if (item.href || isSubmenuOpen) return;
+
+      if (item.items) {
+        this.submenu = item.items;
+      }
+
+      this.select(item);
+
+      this.$emit('click', item);
+    },
+    select (item) {
+      this.selected = item;
+    },
+    isSelected (item) {
+      return this.selected?.id
+        ? item.id === this.selected.id
+        : item.href === this.$route.path || item.location === this.$route.path;
+    }
   }
 };
 </script>
@@ -32,9 +76,15 @@ export default {
 <style scoped lang="scss">
 @import '@/assets/scss/common.scss';
 
+.Menu {
+  display: flex;
+  flex-direction: column;
+  gap: $microgrid;
+}
+
 .Menu-Container {
   display: flex;
-  gap: $gutter;
+  gap: $microgrid;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: flex-end;

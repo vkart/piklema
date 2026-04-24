@@ -6,6 +6,7 @@
     :radius="item.radius"
     :href="item.href"
     :selected="selected"
+    @click.stop="onClick"
   />
 </template>
 
@@ -17,10 +18,15 @@ export default {
   components: {
     Button
   },
-
+  emits: ['click'],
   props: {
     item: Object,
     selected: Boolean
+  },
+  methods: {
+    onClick () {
+      this.$emit('click', this.item);
+    }
   }
 };
 </script>

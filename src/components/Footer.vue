@@ -1,5 +1,6 @@
 <template>
   <footer class="Footer">
+    <Button @click.prevent="scrollToTop" color="black">to the top</Button>
     <div class="Footer-Content" v-show="open">
       <div class="Footer-Copyright"><Localized :text="text.copyright" /></div>
       <Menu class="Footer-Menu" :menu="menu" />
@@ -33,6 +34,9 @@ export default {
   methods: {
     toggle () {
       this.open = !this.open;
+    },
+    scrollToTop () {
+      window.scrollTo(0, 0);
     }
   }
 };
@@ -42,9 +46,11 @@ export default {
 @import '@/assets/scss/common.scss';
 
 .Footer {
-  padding: $gutter;
   display: flex;
   justify-content: flex-end;
+
+  gap: $microgrid;
+  padding-top: $microgrid;
 }
 
 .Footer-Content {
@@ -54,10 +60,9 @@ export default {
 
 .Footer-Copyright {
   @include Caption-Button;
-  @include pad(2px, 6px);
-  padding-left: 14px;
-  padding-right: 14px;
-  background-color: $color-black;
-  color: $color-grey;
+  @include pad(9px, 7px);
+  padding-left: 12px;
+  padding-right: 12px;
+  color: $color-black;
 }
 </style>

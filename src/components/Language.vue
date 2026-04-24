@@ -3,10 +3,9 @@
     <template v-for="lang in langs">
       <div class="Language-Item" :data-selected="store.lang === lang ? true : undefined">
         <Button
-          color="grey"
-          outline="green"
+          :color="store.lang === lang ? 'green' : 'grey'"
           radius="round"
-          :selected="store.lang === lang ? true : undefined"
+          size="small"
           @click="select(lang)"
         >{{lang}}</Button>
       </div>
@@ -49,11 +48,12 @@ export default {
 .Language {
   display: flex;
   gap: 0;
-  width: 96px + 2 * $gutter;
+  width: 86px + 2 * $microgrid;
   transition: all 0.25s ease-in-out;
+  align-self: stretch;
 
   &:hover {
-    width: 96px * 2 + 4 * $gutter;
+    width: 86px * 2 + 4 * $microgrid;
     transition-delay: 0.5s;
 
     .Language-Item {
@@ -64,20 +64,20 @@ export default {
   &:not(:hover) {
     .Language-Item:not([data-selected]) {
       flex: 0 0 0px;
-      padding: $gutter 0;
+      padding: $microgrid 0;
     }
   }
 }
 
 .Language-Item {
   overflow: hidden;
-  flex: 0 0 (96px + 2 * $gutter);
+  flex: 0 0 (86px + 2 * $microgrid);
   transition: all 0.25s ease-in-out;
-  padding: $gutter;
-  margin: -$gutter 0;
+  padding: $microgrid;
+  margin: -$microgrid 0;
 
   > .Button {
-    width: 96px;
+    width: 86px;
   }
 }
 </style>

@@ -1,5 +1,11 @@
 <template>
-  <div class="Image" :data-fit="fit" :data-position="position" :data-size="size">
+  <div class="Image"
+    :data-fit="fit"
+    :data-position="position"
+    :data-size="size"
+    :data-orientation="orientation"
+    :data-ratio="ratio"
+  >
     <img class="Image-Image" :src="src" v-if="mode !== 'bg'" />
     <div class="Image-Image" :style="{ backgroundImage: `url(${src})` }" v-else />
     <div class="Image-Caption" v-html="caption" v-if="caption" />
@@ -17,7 +23,9 @@ export default {
     fit: String,
     mode: String, // bg | img // default = bg
     position: String,
-    size: String // fill | auto // default = fill
+    size: [String, Number], // N of grid modules | fill | auto // default = fill
+    orientation: String, // vertical | horizontal
+    ratio: String // 1:1 | 6:5 | 4:3 | 3:2 | 2:1 | 3:1 | 16:9
   },
   computed: {
     src () {
@@ -35,7 +43,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import '@/assets/scss/common.scss';
+
 .Image {
   max-width: 100%;
   position: relative;
@@ -68,6 +78,54 @@ export default {
     width: auto;
     max-width: 100%;
     height: auto;
+  }
+}
+
+.Image[data-size] {
+  --size: attr(data-size number);
+
+  &[data-ratio="1:1"][data-orientation="vertical"] {
+    .Image-Image { @include image(vertical, 1); }
+  }
+  &[data-ratio="6:5"][data-orientation="vertical"] {
+    .Image-Image { @include image(vertical, 6/5); }
+  }
+  &[data-ratio="4:3"][data-orientation="vertical"] {
+    .Image-Image { @include image(vertical, 4/3); }
+  }
+  &[data-ratio="3:2"][data-orientation="vertical"] {
+    .Image-Image { @include image(vertical, 3/2); }
+  }
+  &[data-ratio="2:1"][data-orientation="vertical"] {
+    .Image-Image { @include image(vertical, 2); }
+  }
+  &[data-ratio="3:1"][data-orientation="vertical"] {
+    .Image-Image { @include image(vertical, 3); }
+  }
+  &[data-ratio="16:9"][data-orientation="vertical"] {
+    .Image-Image { @include image(vertical, 16/9); }
+  }
+
+  &[data-ratio="1:1"][data-orientation="horizontal"] {
+    .Image-Image { @include image(horizontal, 1); }
+  }
+  &[data-ratio="6:5"][data-orientation="horizontal"] {
+    .Image-Image { @include image(horizontal, 6/5); }
+  }
+  &[data-ratio="4:3"][data-orientation="horizontal"] {
+    .Image-Image { @include image(horizontal, 4/3); }
+  }
+  &[data-ratio="3:2"][data-orientation="horizontal"] {
+    .Image-Image { @include image(horizontal, 3/2); }
+  }
+  &[data-ratio="2:1"][data-orientation="horizontal"] {
+    .Image-Image { @include image(horizontal, 2); }
+  }
+  &[data-ratio="3:1"][data-orientation="horizontal"] {
+    .Image-Image { @include image(horizontal, 3); }
+  }
+  &[data-ratio="16:9"][data-orientation="horizontal"] {
+    .Image-Image { @include image(horizontal, 16/9); }
   }
 }
 </style>

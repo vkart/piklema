@@ -1,38 +1,29 @@
 <template>
   <main class="Intro">
-    <Disclaimer :text="text.intro.disclaimer" />
-    <Blocks class="Intro-Content" :blocks="intro" />
+    <Page
+      type="text"
+      :content="content"
+      :disclaimer="text.intro.disclaimer"
+    />
   </main>
 </template>
 
 <script>
-import Blocks from '@/components/Blocks.vue';
-import Disclaimer from '@/components/Disclaimer.vue';
+import Page from '@/components/Page.vue';
 
 import text from '@/data/static.js';
-import intro from '@/data/intro.js';
+import content from '@/data/intro.js';
 
 export default {
-  name: 'FontView',
+  name: 'IntroView',
   components: {
-    Blocks,
-    Disclaimer
+    Page
   },
   data () {
     return {
-      intro,
+      content,
       text
     };
   }
 };
 </script>
-
-<style scoped>
-.Intro-Content {
-  margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 140px;
-  width: 61.8vw;
-  max-width: 977px;
-}
-</style>

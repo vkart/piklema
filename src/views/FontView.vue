@@ -1,15 +1,13 @@
 <template>
   <main class="Font" v-if="font">
     <FontMenu :font="font" />
-    <Image class="Font-Hero" :image="font.heroImage" />
-    <PageView :content="font.content" />
+    <Page :content="font.content" />
   </main>
 </template>
 
 <script>
-import Image from '@/components/Image.vue';
 import FontMenu from '@/components/FontMenu.vue';
-import PageView from '@/views/PageView.vue';
+import Page from '@/components/Page.vue';
 
 import fonts from '@/data/fonts.js';
 import { store } from '@/store/store.js';
@@ -17,9 +15,8 @@ import { store } from '@/store/store.js';
 export default {
   name: 'FontView',
   components: {
-    Image,
     FontMenu,
-    PageView
+    Page
   },
   props: {
     id: String

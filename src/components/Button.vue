@@ -1,9 +1,9 @@
 <template>
   <button
     class="Button"
-    :data-type="type"
+    :data-type="type || 'Text'"
     :data-modifier="modifier"
-    :data-size="size"
+    :data-size="size || 'medium'"
     :data-radius="radius"
     :data-color="color"
     :data-outline="outline"
@@ -30,7 +30,7 @@ export default {
   props: {
     label: [Object, String],
     modifier: String, // not used
-    size: String, // not used
+    size: String, // small / medium
     radius: String, // none / semi / round (default)
     color: String, // grey (default) / blue / pink / black
     outline: String, // yellow / green
@@ -44,8 +44,6 @@ export default {
   methods: {
     handleClick (ev) {
       const { href, hrefTarget, scrollTo } = this;
-
-      console.log('HANDLE CLICK', href, hrefTarget);
 
       if (href) {
         if (hrefTarget) {
@@ -84,16 +82,12 @@ export default {
   border: none !important;
   outline: none !important;
 
-  @include Caption-Button;
-  @include pad(2px, 6px);
-  padding-left: 14px;
-  padding-right: 14px;
-  border-radius: 30px;
-
-  box-shadow: inset 0 4px 4px transparentize($color-black, 0.75);
+  border-radius: 28px;
+  box-shadow: inset 0 -4px 4px transparentize($color-black, 0.75);
 
   &:not([disabled]):hover {
-    box-shadow: inset 0 8px 8px transparentize($color-black, 0.75);
+    box-shadow: inset 0 -4px 4px transparentize($color-black, 0.75),
+      0 4px 4px transparentize($color-black, 0.25);
   }
 
   &:active,
@@ -106,8 +100,28 @@ export default {
   }
 }
 
-.Button[data-type="icon"] {
-  padding: 24px 12px;
+.Button[data-type="Text"] {
+  @include Caption-Button;
+
+  &[data-size="medium"] {
+    @include pad(9px, 7px);
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  &[data-size="small"] {
+    @include pad(0px, 0px);
+  }
+}
+
+.Button[data-type="Icon"] {
+  &[data-size="medium"] {
+    padding: 24px 12px 20px 12px;
+  }
+
+  &[data-size="small"] {
+    padding: 16px 12px 12px 12px;
+  }
 }
 
 .Button[data-color="blue"] {
@@ -122,7 +136,17 @@ export default {
 
 .Button[data-color="black"] {
   background-color: $color-black;
-  color: $color-blue;
+  color: $color-grey;
+}
+
+.Button[data-color="black+yellow"] {
+  background-color: $color-black;
+  color: $color-yellow;
+}
+
+.Button[data-color="green"] {
+  background-color: $color-green;
+  color: $color-black;
 }
 
 .Button[data-radius="none"] {
@@ -130,7 +154,7 @@ export default {
 }
 
 .Button[data-radius="semi"] {
-  border-radius: 30px;
+  border-radius: 28px;
 }
 
 .Button[data-radius="round"] {
