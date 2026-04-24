@@ -1,5 +1,5 @@
 <template>
-  <main class="Intro">
+  <main class="Terms">
     <Page
       type="grid"
       :content="content"
