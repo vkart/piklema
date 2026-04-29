@@ -63,10 +63,10 @@
       <div class="Try-Fieldset">
         <div class="Try-Row">
           <div class="Try-Field">
-            <Selector :options="caseOptions" size="S" v-model="textTransform" />
+            <Selector :options="CASE_OPTIONS" size="S" v-model="textTransform" />
           </div>
           <div class="Try-Field">
-            <Selector :options="alignOptions" size="S" v-model="textAlign" />
+            <Selector :options="ALIGN_OPTIONS" size="S" v-model="textAlign" />
           </div>
         </div>
       </div>
@@ -97,6 +97,28 @@ const DEFAULT_LINE_HEIGHT = 72;
 const DEFAULT_TRACKING = 0;
 const DEFAULT_COLUMNS = 1;
 
+const CASE_OPTIONS = [{
+  name: 'Norm',
+  value: undefined
+}, {
+  name: 'CAPS',
+  value: 'uppercase'
+}, {
+  name: 'low',
+  value: 'lowercase'
+}];
+
+const ALIGN_OPTIONS = [{
+  name: 'left',
+  value: undefined
+}, {
+  name: 'center',
+  value: 'center'
+}, {
+  name: 'right',
+  value: 'right'
+}];
+
 export default {
   name: 'Try',
   components: {
@@ -111,41 +133,40 @@ export default {
   },
   data () {
     const font = this.font;
+    const q = this.$route.query;
+    const features = q.ff.split(',');
+    const sets = font.try.sets.map(set => ({
+      ...set,
+      on: features.includes(set.value)
+    }));
+
+    const initial = {
+      fontWeight: q.fw || font.try.weights[0].value,
+      fontSize: Number(q.fs) || DEFAULT_FONT_SIZE,
+      lineHeight: Number(q.lh) || DEFAULT_LINE_HEIGHT,
+      letterSpacing: Number(q.ls) || DEFAULT_TRACKING,
+      columns: Number(q.col) || DEFAULT_COLUMNS,
+      textTransform: q.tt || undefined,
+      textAlign: q.ta || undefined,
+      sets
+    };
 
     return {
       text,
       fontFamily: `${font.try.family}`,
-      fontSize: DEFAULT_FONT_SIZE,
-      lineHeight: DEFAULT_LINE_HEIGHT,
-      letterSpacing: DEFAULT_TRACKING,
-      columns: DEFAULT_COLUMNS,
+      fontWeight: initial.fontWeight,
+      fontSize: initial.fontSize,
+      lineHeight: initial.lineHeight,
+      letterSpacing: initial.letterSpacing,
+      columns: initial.columns,
       lockRatio: true,
-      ratio: DEFAULT_LINE_HEIGHT / DEFAULT_FONT_SIZE,
-      sets: font.try.sets,
+      ratio: initial.lineHeight / initial.fontSize,
+      textTransform: initial.textTransform,
+      textAlign: initial.textAlign,
+      sets: initial.sets,
       weights: font.try.weights,
-      fontWeight: font.try.weights[0].value,
-      textTransform: undefined,
-      textAlign: undefined,
-      caseOptions: [{
-        name: 'Norm',
-        value: undefined
-      }, {
-        name: 'CAPS',
-        value: 'uppercase'
-      }, {
-        name: 'low',
-        value: 'lowercase'
-      }],
-      alignOptions: [{
-        name: 'left',
-        value: undefined
-      }, {
-        name: 'center',
-        value: 'center'
-      }, {
-        name: 'right',
-        value: 'right'
-      }]
+      CASE_OPTIONS,
+      ALIGN_OPTIONS
     };
   },
   computed: {
@@ -180,6 +201,23 @@ export default {
       if (this.lockRatio) {
         this.lineHeight = Math.round(this.fontSize * this.ratio);
       }
+
+      const sets = this.sets.filter(set => set.on);
+      const features = sets.map(set => set.value).join(',');
+
+      this.$router.push({
+        path: `/try/${this.font.id}`,
+        query: {
+          fw: this.fontWeight,
+          fs: this.fontSize,
+          lh: this.lineHeight,
+          ls: this.letterSpacing,
+          col: this.columns,
+          tt: this.textTransform,
+          ta: this.textAlign,
+          ff: features
+        }
+      });
     });
   }
 };
