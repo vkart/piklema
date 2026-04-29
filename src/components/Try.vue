@@ -5,8 +5,8 @@
     </div>
     <div class="Try-Controls">
       <div class="Try-Fieldset">
-        <div class="Try-Title"><Localized :text="font.name" /></div>
         <div class="Try-Field">
+          <div class="Try-Label"><Localized :text="font.name" /></div>
           <Selector :options="weights" size="S" v-model="fontWeight" />
         </div>
       </div>
