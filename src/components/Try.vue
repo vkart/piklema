@@ -63,6 +63,18 @@
       <div class="Try-Fieldset">
         <div class="Try-Row">
           <div class="Try-Field">
+            <div class="Try-Label">Color</div>
+            <Select :options="COLOR_OPTIONS" size="S" v-model="color" />
+          </div>
+          <div class="Try-Field">
+            <div class="Try-Label">Background</div>
+            <Select :options="COLOR_OPTIONS" size="S" v-model="backgroundColor" />
+          </div>
+        </div>
+      </div>
+      <div class="Try-Fieldset">
+        <div class="Try-Row">
+          <div class="Try-Field">
             <Selector :options="CASE_OPTIONS" size="S" v-model="textTransform" />
           </div>
           <div class="Try-Field">
@@ -88,6 +100,7 @@ import Input from '@/components/Input.vue';
 import Localized from '@/components/Localized.vue';
 import Toggle from '@/components/Toggle.vue';
 import Slider from '@/components/Slider.vue';
+import Select from '@/components/Select.vue';
 import Selector from '@/components/Selector.vue';
 
 import text from '@/data/static.js';
@@ -119,6 +132,19 @@ const ALIGN_OPTIONS = [{
   value: 'right'
 }];
 
+const COLOR_OPTIONS = [
+  { name: 'none', value: undefined },
+  { name: 'black', value: '#000000' },
+  { name: 'white', value: '#FFFFFF' },
+  { name: 'grey', value: '#C4C4C4' },
+  { name: 'yellow', value: '#FAFF00' },
+  { name: 'mustard', value: '#E6EA05' },
+  { name: 'olive', value: '#969900' },
+  { name: 'pink', value: '#FF00F5' },
+  { name: 'green', value: '#00FF00' },
+  { name: 'blue', value: '#000AFF' }
+];
+
 export default {
   name: 'Try',
   components: {
@@ -126,6 +152,7 @@ export default {
     Localized,
     Toggle,
     Slider,
+    Select,
     Selector
   },
   props: {
@@ -148,6 +175,8 @@ export default {
       columns: Number(q.col) || DEFAULT_COLUMNS,
       textTransform: q.tt || undefined,
       textAlign: q.ta || undefined,
+      color: q.fc || undefined,
+      backgroundColor: q.bg || undefined,
       sets
     };
 
@@ -163,10 +192,13 @@ export default {
       ratio: initial.lineHeight / initial.fontSize,
       textTransform: initial.textTransform,
       textAlign: initial.textAlign,
+      color: initial.color,
+      backgroundColor: initial.backgroundColor,
       sets: initial.sets,
       weights: font.try.weights,
       CASE_OPTIONS,
-      ALIGN_OPTIONS
+      ALIGN_OPTIONS,
+      COLOR_OPTIONS
     };
   },
   computed: {
@@ -183,6 +215,8 @@ export default {
         columnCount: this.columns,
         textTransform: this.textTransform,
         textAlign: this.textAlign,
+        color: this.color,
+        backgroundColor: this.backgroundColor,
         'font-feature-settings': features
       };
 
@@ -215,6 +249,8 @@ export default {
           col: this.columns,
           tt: this.textTransform,
           ta: this.textAlign,
+          fc: this.color,
+          bg: this.backgroundColor,
           ff: features
         }
       });
@@ -245,7 +281,7 @@ export default {
   left: $microgrid;
   padding: $microgrid;
   background-color: $color-yellow;
-  width: grid(18);
+  width: grid(20);
 
   display: flex;
   flex-direction: column;
@@ -261,6 +297,10 @@ export default {
 .Try-Row {
   display: flex;
   gap: $grid;
+
+  .Try-Field {
+    flex: 1;
+  }
 }
 
 .Try-Title {
@@ -278,7 +318,7 @@ export default {
   display: flex;
   gap: $microgrid;
 
-  .Slide {
+  .Slide, .Select {
     flex: 1;
   }
   .Input {
