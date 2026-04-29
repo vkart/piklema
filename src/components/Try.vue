@@ -161,7 +161,7 @@ export default {
   data () {
     const font = this.font;
     const q = this.$route.query;
-    const features = q.ff.split(',');
+    const features = q.ff ? q.ff.split(',') : [];
     const sets = font.try.sets.map(set => ({
       ...set,
       on: features.includes(set.value)
