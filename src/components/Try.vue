@@ -3,91 +3,99 @@
     <div class="Try-Edit" :style="style" contenteditable="true">
       {{text.try.sample}}
     </div>
-    <div class="Try-Controls">
-      <div class="Try-Fieldset">
-        <div class="Try-Field">
-          <div class="Try-Label"><Localized :text="font.name" /></div>
-          <Selector :options="weights" size="S" v-model="fontWeight" />
-        </div>
-      </div>
-      <div class="Try-Fieldset">
-        <div class="Try-Field">
-          <div class="Try-Label">Font size</div>
-          <Slider
-            :min="8"
-            :max="240"
-            :step="4"
-            v-model="fontSize"
-          />
-          <Input type="number" v-model="fontSize" />
-        </div>
-        <div class="Try-Field">
-          <div class="Try-Label">Line height</div>
-          <Slider
-            min="8"
-            max="240"
-            step="4"
-            :disabled="lockRatio ? 'disabled' : undefined"
-            v-model="lineHeight"
-          />
-          <Input
-            type="number"
-            v-model="lineHeight"
-            :disabled="lockRatio ? 'disabled' : undefined"
-          />
-        </div>
-        <div class="Try-Field">
-          <div class="Try-Label">Tracking</div>
-          <Slider
-            min="-20"
-            max="20"
-            step="0.1"
-            v-model="letterSpacing"
-          />
-          <Input type="number" v-model="letterSpacing" />
-        </div>
-        <div class="Try-Field">
-          <div class="Try-Label">Cols</div>
-          <Slider
-            min="1"
-            max="12"
-            step="1"
-            v-model="columns"
-          />
-          <Input type="number" v-model="columns" />
-        </div>
-        <div class="Try-Field">
-          <Toggle label="Lock LH/FS ratio" size="S" v-model="lockRatio" />
-        </div>
-      </div>
-      <div class="Try-Fieldset">
-        <div class="Try-Row">
+    <div
+      class="Try-Controls"
+      :data-mode="mode"
+      @mouseenter="onMouseEnter"
+      @mouseleave="onMouseLeave"
+    >
+      <div class="Try-Form">
+        <div class="Try-Fieldset">
+          <div class="Try-Header" data-mode="compact"><Localized :text="font.name" /></div>
           <div class="Try-Field">
-            <div class="Try-Label">Color</div>
-            <Select :options="COLOR_OPTIONS" size="S" v-model="color" />
-          </div>
-          <div class="Try-Field">
-            <div class="Try-Label">Background</div>
-            <Select :options="COLOR_OPTIONS" size="S" v-model="backgroundColor" />
+            <div class="Try-Label"><Localized :text="font.name" /></div>
+            <Selector :options="weights" size="S" v-model="fontWeight" />
           </div>
         </div>
-      </div>
-      <div class="Try-Fieldset">
-        <div class="Try-Row">
+        <div class="Try-Fieldset">
           <div class="Try-Field">
-            <Selector :options="CASE_OPTIONS" size="S" v-model="textTransform" />
+            <div class="Try-Label">Font size</div>
+            <Slider
+              :min="8"
+              :max="240"
+              :step="4"
+              v-model="fontSize"
+            />
+            <Input type="number" v-model="fontSize" />
           </div>
           <div class="Try-Field">
-            <Selector :options="ALIGN_OPTIONS" size="S" v-model="textAlign" />
+            <div class="Try-Label">Line height</div>
+            <Slider
+              min="8"
+              max="240"
+              step="4"
+              :disabled="lockRatio ? 'disabled' : undefined"
+              v-model="lineHeight"
+            />
+            <Input
+              type="number"
+              v-model="lineHeight"
+              :disabled="lockRatio ? 'disabled' : undefined"
+            />
+          </div>
+          <div class="Try-Field">
+            <div class="Try-Label">Tracking</div>
+            <Slider
+              min="-20"
+              max="20"
+              step="0.1"
+              v-model="letterSpacing"
+            />
+            <Input type="number" v-model="letterSpacing" />
+          </div>
+          <div class="Try-Field">
+            <div class="Try-Label">Cols</div>
+            <Slider
+              min="1"
+              max="12"
+              step="1"
+              v-model="columns"
+            />
+            <Input type="number" v-model="columns" />
+          </div>
+          <div class="Try-Field">
+            <Toggle label="Lock LH/FS ratio" size="S" v-model="lockRatio" />
           </div>
         </div>
-      </div>
-      <div class="Try-Fieldset">
-        <template v-for="(set, index) in sets">
-          <div class="Try-Field">
-            <Toggle :label="set.name" size="S" v-model="sets[index].on" />
+        <div class="Try-Fieldset">
+          <div class="Try-Row">
+            <div class="Try-Field">
+              <div class="Try-Label">Color</div>
+              <Select :options="COLOR_OPTIONS" size="S" v-model="color" />
+            </div>
+            <div class="Try-Field">
+              <div class="Try-Label">Background</div>
+              <Select :options="COLOR_OPTIONS" size="S" v-model="backgroundColor" />
+            </div>
           </div>
-        </template>
+        </div>
+        <div class="Try-Fieldset">
+          <div class="Try-Row">
+            <div class="Try-Field">
+              <Selector :options="CASE_OPTIONS" size="S" v-model="textTransform" />
+            </div>
+            <div class="Try-Field">
+              <Selector :options="ALIGN_OPTIONS" size="S" v-model="textAlign" />
+            </div>
+          </div>
+        </div>
+        <div class="Try-Fieldset">
+          <template v-for="(set, index) in sets">
+            <div class="Try-Field">
+              <Toggle :label="set.name" size="S" v-model="sets[index].on" />
+            </div>
+          </template>
+        </div>
       </div>
     </div>
   </div>
@@ -109,6 +117,7 @@ const DEFAULT_FONT_SIZE = 96;
 const DEFAULT_LINE_HEIGHT = 72;
 const DEFAULT_TRACKING = 0;
 const DEFAULT_COLUMNS = 1;
+const HIDE_TIMEOUT = 1000;
 
 const CASE_OPTIONS = [{
   name: 'Norm',
@@ -181,6 +190,8 @@ export default {
     };
 
     return {
+      mode: 'normal',
+      timer: undefined,
       text,
       fontFamily: `${font.try.family}`,
       fontWeight: initial.fontWeight,
@@ -255,6 +266,25 @@ export default {
         }
       });
     });
+  },
+  methods: {
+    onMouseEnter () {
+      console.log('ENTER');
+      window.clearTimeout(this.timer);
+      this.open();
+    },
+    onMouseLeave () {
+      console.log('LEAVE');
+      this.timer = window.setTimeout(this.minimize, HIDE_TIMEOUT);
+    },
+    minimize () {
+      console.log('MIN');
+      this.mode = 'compact';
+    },
+    open () {
+      console.log('OPEN');
+      this.mode = 'normal';
+    }
   }
 };
 </script>
@@ -280,9 +310,31 @@ export default {
   bottom: $microgrid;
   left: $microgrid;
   padding: $microgrid;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  color: $color-black;
   background-color: $color-yellow;
-  width: grid(20);
 
+  &[data-mode="normal"] {
+    width: grid(20);
+    height: grid(16);
+
+    [data-mode="compact"] {
+      display: none;
+    }
+  }
+
+  &[data-mode="compact"] {
+    height: 36px;
+    width: grid(5);
+
+    .Try-Field {
+      opacity: 0;
+    }
+  }
+}
+
+.Try-Form {
   display: flex;
   flex-direction: column;
   gap: $grid + $gutter;
@@ -317,6 +369,7 @@ export default {
 .Try-Field {
   display: flex;
   gap: $microgrid;
+  transition: all 0.25s ease-in-out;
 
   .Slide, .Select {
     flex: 1;
