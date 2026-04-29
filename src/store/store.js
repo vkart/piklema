@@ -5,12 +5,16 @@ const DEFAULT_LANG = 'ru';
 export const store = reactive({
   lang: DEFAULT_LANG,
   pageName: undefined,
+  mode: 'normal',
   menuMode: 'normal',
   slides: null,
   currentSlide: null,
 
   setLang (lang) {
     this.lang = lang;
+  },
+  setMode (mode) {
+    this.mode = mode;
   },
   setMenuMode (mode) {
     this.menuMode = mode;

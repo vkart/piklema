@@ -59,14 +59,26 @@
   text-decoration: none;
   text-transform: none;
 
-  font-size: 22.4px;
-  line-height: 28px;
-  letter-spacing: -0.02em;
+  @if $device == Desktop {
+    font-size: 22.4px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
 
-  @include text-compensation(-7px, -5px);
+    @include text-compensation(-7px, -5px);
 
-  ::v-deep p + p {
-    margin-top: 28px;
+    ::v-deep p + p {
+      margin-top: 28px;
+    }
+  } @else {
+    font-size: 16.5px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
+    @include text-compensation(-5px, -3px);
+
+    ::v-deep p + p {
+      margin-top: 20px;
+    }
   }
 }
 

@@ -15,6 +15,36 @@ export default {
     ru: 'Пластинка',
     en: 'Plastinka'
   },
+  try: {
+    family: 'Plastinka-Trial',
+    file: '',
+    weights: [{
+      name: 'norm',
+      value: '400'
+    }, {
+      name: 'text',
+      value: '500'
+    }, {
+      name: 'semi',
+      value: '600'
+    }, {
+      name: 'bold',
+      value: '700'
+    }],
+    sets: [{
+      value: 'salt',
+      name: 'Stylistic alternates'
+    }, {
+      value: 'ss01',
+      name: 'Stylistic set #1'
+    }, {
+      value: 'ss02',
+      name: 'Stylistic set #2'
+    }, {
+      value: 'sinf',
+      name: 'Scientific inferiors'
+    }]
+  },
   teaser: {
     src: 'fonts/plastinka/plastinka-teaser.png'
   },

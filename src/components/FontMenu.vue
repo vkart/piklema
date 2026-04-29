@@ -7,7 +7,7 @@
       radius="none"
     />
     <Button :href="font.specimen.href" hrefTarget="_blank">spec</Button>
-    <Button>trial</Button>
+    <Button :href="`/try/${font.id}`">trial</Button>
     <Button>buy</Button>
   </div>
 </template>

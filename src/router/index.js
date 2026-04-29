@@ -4,6 +4,7 @@ import CaseView from '../views/CaseView.vue';
 import FontView from '../views/FontView.vue';
 import IntroView from '../views/IntroView.vue';
 import TermsView from '../views/TermsView.vue';
+import TryView from '../views/TryView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,12 @@ const router = createRouter({
       path: '/fonts/:id',
       name: 'font',
       component: FontView,
+      props: true
+    },
+    {
+      path: '/try/:id',
+      name: 'try',
+      component: TryView,
       props: true
     },
     {
