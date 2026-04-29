@@ -1,9 +1,7 @@
 <template>
-  <header class="Header">
+  <header class="Header" :data-mode="store.mode">
     <div class="Header-Row">
-      <div class="Header-Logo">
-        <a href="/"><img src="@/assets/images/ptf-logo-72px.svg" width="292" height="72" alt="" /></a>
-      </div>
+      <div class="Header-Logo" />
       <div class="Header-Col">
         <Menu
           :menu="menu"
@@ -49,7 +47,9 @@ export default {
   },
   computed: {
     compact () {
-      return this.$isMobile() || store.menuMode === 'compact';
+      return this.$isMobile() ||
+        store.menuMode === 'compact' ||
+        store.mode === 'minimal';
     }
   },
   methods: {
@@ -69,10 +69,14 @@ export default {
   z-index: 10;
 }
 
+.Header[data-mode="minimal"] {
+  position: fixed;
+  right: $microgrid;
+}
+
 .Header-Row {
   display: flex;
   gap: $gutter;
-  background-color: $color-white;
 }
 
 .Header-Logo {

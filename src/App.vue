@@ -1,10 +1,10 @@
 <template>
   <metainfo />
-  <Logo />
+  <Logo v-if="store.mode !== 'minimal'" />
   <Header />
   <RouterView />
   <Slideshow />
-  <Footer />
+  <Footer v-if="store.mode !== 'minimal'" />
 </template>
 
 <script>
