@@ -37,7 +37,7 @@ export default {
       next('/fonts');
     }
   },
-  beforeRouterLeave () {
+  beforeRouteLeave () {
     store.setMenuMode('normal');
     store.removePageName(undefined);
   },
