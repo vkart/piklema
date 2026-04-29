@@ -1,12 +1,12 @@
 <template>
   <div class="Selector">
-    <template v-for="(option, index) in options">
+    <template v-for="(option, i) in options">
       <Pill
         class="Selector-Option"
         :label="option.name"
         :size="size"
-        :active="selectedIndex === index ? true : undefined"
-        @click="selectOption(index)"
+        :active="index === i ? true : undefined"
+        @click="select(i)"
       />
     </template>
   </div>
@@ -27,27 +27,23 @@ export default {
   },
   emits: ['update:modelValue'],
   data () {
+    const index = this.getOptionIndex(this.modelValue) || 0;
+    const option = this.options[index];
+
     return {
-      selectedIndex: undefined,
-      selectedOption: undefined,
-      list: this.$slots.default
+      index,
+      option
     };
   },
-  mounted () {
-    const index = this.getOptionIndex(this.modelValue) || 0;
-
-    this.selectOption(index, { silent: true });
-  },
   methods: {
-    selectOption (i, { silent } = {}) {
-      this.selectedIndex = i;
-
+    select (i) {
       const option = this.options[i];
       const value = option.value;
 
-      if (!silent) {
-        this.$emit('update:modelValue', value, option);
-      }
+      this.index = i;
+      this.option = option;
+
+      this.$emit('update:modelValue', value, option);
     },
     getOptionIndex (name) {
       if (!name) return undefined;

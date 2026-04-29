@@ -55,14 +55,14 @@ export default {
 .Pill[data-size="S"] {
   .Pill-Label {
     @include Interface(Mobile);
-    padding: 4px 12px;
+    padding: 4px 8px;
   }
 }
 
 .Pill[data-size="M"] {
   .Pill-Label {
     @include Interface;
-    padding: 6px 12px;
+    padding: 6px 8px;
   }
 }
 
