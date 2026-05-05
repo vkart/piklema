@@ -10,11 +10,15 @@
       @mouseleave="onMouseLeave"
     >
       <div class="Try-Form">
+        <div class="Try-Header" data-mode="compact"><Localized :text="font.name" /></div>
         <div class="Try-Fieldset">
-          <div class="Try-Header" data-mode="compact"><Localized :text="font.name" /></div>
-          <div class="Try-Field">
-            <div class="Try-Label"><Localized :text="font.name" /></div>
-            <Selector :options="weights" size="S" v-model="fontWeight" />
+          <div class="Try-Row">
+            <div class="Try-Field">
+              <Select :options="fontOptions" size="S" v-model="currentFont" />
+            </div>
+            <div class="Try-Field">
+              <Selector :options="weights" size="S" v-model="fontWeight" v-if="weights.length > 1" />
+            </div>
           </div>
         </div>
         <div class="Try-Fieldset">
@@ -71,11 +75,11 @@
           <div class="Try-Row">
             <div class="Try-Field">
               <div class="Try-Label">Color</div>
-              <Select :options="COLOR_OPTIONS" size="S" v-model="color" />
+              <Select :options="COLOR_OPTIONS" size="S" position="top" v-model="color" />
             </div>
             <div class="Try-Field">
               <div class="Try-Label">Background</div>
-              <Select :options="COLOR_OPTIONS" size="S" v-model="backgroundColor" />
+              <Select :options="COLOR_OPTIONS" size="S" position="top" v-model="backgroundColor" />
             </div>
           </div>
         </div>
@@ -112,6 +116,7 @@ import Select from '@/components/Select.vue';
 import Selector from '@/components/Selector.vue';
 
 import text from '@/data/static.js';
+import fonts from '@/data/fonts.js';
 
 const DEFAULT_FONT_SIZE = 96;
 const DEFAULT_LINE_HEIGHT = 72;
@@ -133,7 +138,7 @@ const SETTINGS = {
 };
 
 const CASE_OPTIONS = [{
-  name: 'Norm',
+  name: 'Mix',
   value: undefined
 }, {
   name: 'CAPS',
@@ -188,6 +193,10 @@ export default {
       ...set,
       on: features.includes(set.value)
     }));
+    const fontOptions = fonts.map(font => ({
+      name: font.name.en,
+      value: font.id
+    }));
 
     const initial = {
       fontWeight: q.fw || font.try.weights[0].value,
@@ -206,6 +215,8 @@ export default {
       mode: 'normal',
       timer: undefined,
       text,
+      fontOptions,
+      currentFont: font.id,
       fontFamily: `${font.try.family}`,
       fontWeight: initial.fontWeight,
       fontSize: initial.fontSize,
@@ -261,42 +272,47 @@ export default {
         this.lineHeight = Math.round(this.fontSize * this.ratio);
       }
 
+      const reset = this.currentFont !== this.font.id;
+      const path = `/try/${this.currentFont}`;
+      const query = {
+        fs: this.fontSize,
+        lh: this.lineHeight,
+        ls: this.letterSpacing,
+        col: this.columns,
+        tt: this.textTransform,
+        ta: this.textAlign,
+        fc: this.color,
+        bg: this.backgroundColor
+      };
+
+      if (reset) {
+        this.$router.replace({ path, query });
+        this.$router.go();
+
+        return;
+      }
+
       const sets = this.sets.filter(set => set.on);
       const features = sets.map(set => set.value).join(',');
 
-      this.$router.push({
-        path: `/try/${this.font.id}`,
-        query: {
-          fw: this.fontWeight,
-          fs: this.fontSize,
-          lh: this.lineHeight,
-          ls: this.letterSpacing,
-          col: this.columns,
-          tt: this.textTransform,
-          ta: this.textAlign,
-          fc: this.color,
-          bg: this.backgroundColor,
-          ff: features
-        }
-      });
+      query.fw = this.fontWeight;
+      query.ff = features;
+
+      this.$router.replace({ path, query });
     });
   },
   methods: {
     onMouseEnter () {
-      console.log('ENTER');
       window.clearTimeout(this.timer);
       this.open();
     },
     onMouseLeave () {
-      console.log('LEAVE');
       this.timer = window.setTimeout(this.minimize, HIDE_TIMEOUT);
     },
     minimize () {
-      console.log('MIN');
       this.mode = 'compact';
     },
     open () {
-      console.log('OPEN');
       this.mode = 'normal';
     }
   }
@@ -310,9 +326,10 @@ export default {
 }
 
 .Try-Edit {
-  min-height: calc(100vh - grid(3) * 2 - 4 * $microgrid);
+  min-height: calc(100vh - 2 * $microgrid);
   outline: none !important;
   background-color: $color-grey;
+  padding: 0.15em 0;
 
   &:focus {
     background-color: $color-yellow;
@@ -331,7 +348,7 @@ export default {
 
   &[data-mode="normal"] {
     width: grid(20);
-    height: grid(16);
+    max-height: grid(16);
 
     [data-mode="compact"] {
       display: none;
