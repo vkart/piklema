@@ -1,5 +1,10 @@
 <template>
-  <div class="Select" :data-size="size || 'M'" @click.stop="toggleModal">
+  <div class="Select"
+    :data-size="size || 'M'"
+    :data-position="position || 'bottom'"
+    @click="toggleModal"
+    v-click-outside="hideModal"
+  >
     <div class="Select-Label" v-text="option.name" />
     <Icon class="Select-Icon" name="ChevronDown" />
     <div class="Select-Modal" v-show="modal">
@@ -18,16 +23,22 @@
 </template>
 
 <script>
+import { clickOutside } from '@/directives/clickOutside';
+
 import Icon from '@/components/Icon.vue';
 
 export default {
   name: 'Select',
+  directives: {
+    clickOutside
+  },
   components: {
     Icon
   },
   props: {
     options: Array,
     size: String, // M | S
+    position: String, // top | bottom
     modelValue: String
   },
   emits: ['update:modelValue'],
@@ -50,6 +61,7 @@ export default {
       this.option = option;
 
       this.$emit('update:modelValue', value, option);
+      this.$emit('change', value, option);
 
       this.toggleModal();
     },
@@ -61,6 +73,9 @@ export default {
       );
 
       return index < 0 ? undefined : index;
+    },
+    hideModal () {
+      this.modal = false;
     },
     toggleModal () {
       this.modal = !this.modal;
@@ -119,8 +134,16 @@ export default {
     flex: 0 0 28px;
   }
 
-  .Select-Modal {
-    bottom: 28px;
+  &[data-position="top"] {
+    .Select-Modal {
+      bottom: 28px;
+    }
+  }
+
+  &[data-position="bottom"] {
+    .Select-Modal {
+      top: 28px;
+    }
   }
 
   .Select-Label {
@@ -142,8 +165,16 @@ export default {
     height: 20px;
   }
 
-  .Select-Modal {
-    bottom: 20px;
+  &[data-position="top"] {
+    .Select-Modal {
+      bottom: 20px;
+    }
+  }
+
+  &[data-position="bottom"] {
+    .Select-Modal {
+      top: 20px;
+    }
   }
 
   .Select-Label {
