@@ -19,31 +19,10 @@ export default {
     family: 'Plastinka-Trial',
     file: '',
     weights: [{
-      name: 'norm',
+      name: 'reg',
       value: '400'
-    }, {
-      name: 'text',
-      value: '500'
-    }, {
-      name: 'semi',
-      value: '600'
-    }, {
-      name: 'bold',
-      value: '700'
     }],
-    sets: [{
-      value: 'salt',
-      name: 'Stylistic alternates'
-    }, {
-      value: 'ss01',
-      name: 'Stylistic set #1'
-    }, {
-      value: 'ss02',
-      name: 'Stylistic set #2'
-    }, {
-      value: 'sinf',
-      name: 'Scientific inferiors'
-    }]
+    sets: []
   },
   teaser: {
     src: 'fonts/plastinka/plastinka-teaser.png'
