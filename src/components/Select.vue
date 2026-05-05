@@ -41,7 +41,7 @@ export default {
     position: String, // top | bottom
     modelValue: String
   },
-  emits: ['update:modelValue'],
+  emits: ['change', 'update:modelValue'],
   data () {
     const index = this.getOptionIndex(this.modelValue) || 0;
     const option = this.options[index];
