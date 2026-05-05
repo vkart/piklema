@@ -20,7 +20,7 @@ export default {
   },
   data () {
     const id = this.id;
-    const font = fonts.find(el => el.id === id);
+    const font = fonts.find(el => el.id === id) || fonts[0];
 
     return {
       font
