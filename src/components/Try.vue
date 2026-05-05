@@ -21,9 +21,9 @@
           <div class="Try-Field">
             <div class="Try-Label">Font size</div>
             <Slider
-              :min="8"
-              :max="240"
-              :step="4"
+              :min="FONT_SIZE_MIN"
+              :max="FONT_SIZE_MAX"
+              :step="FONT_SIZE_STEP"
               v-model="fontSize"
             />
             <Input type="number" v-model="fontSize" />
@@ -31,9 +31,9 @@
           <div class="Try-Field">
             <div class="Try-Label">Line height</div>
             <Slider
-              min="8"
-              max="240"
-              step="4"
+              :min="LINE_HEIGHT_MIN"
+              :max="LINE_HEIGHT_MAX"
+              :step="LINE_HEIGHT_STEP"
               :disabled="lockRatio ? 'disabled' : undefined"
               v-model="lineHeight"
             />
@@ -46,8 +46,8 @@
           <div class="Try-Field">
             <div class="Try-Label">Tracking</div>
             <Slider
-              min="-20"
-              max="20"
+              :min="TRACKING_MIN"
+              :max="TRACKING_MAX"
               step="0.1"
               v-model="letterSpacing"
             />
@@ -56,8 +56,8 @@
           <div class="Try-Field">
             <div class="Try-Label">Cols</div>
             <Slider
-              min="1"
-              max="12"
+              :min="COLS_MIN"
+              :max="COLS_MAX"
               step="1"
               v-model="columns"
             />
@@ -118,6 +118,19 @@ const DEFAULT_LINE_HEIGHT = 72;
 const DEFAULT_TRACKING = 0;
 const DEFAULT_COLUMNS = 1;
 const HIDE_TIMEOUT = 1000;
+
+const SETTINGS = {
+  FONT_SIZE_MIN: 8,
+  FONT_SIZE_MAX: 320,
+  FONT_SIZE_STEP: 4,
+  LINE_HEIGHT_MIN: 8,
+  LINE_HEIGHT_MAX: 320,
+  LINE_HEIGHT_STEP: 4,
+  TRACKING_MIN: -20,
+  TRACKING_MAX: 40,
+  COLS_MIN: 1,
+  COLS_MAX: 12
+};
 
 const CASE_OPTIONS = [{
   name: 'Norm',
@@ -209,7 +222,8 @@ export default {
       weights: font.try.weights,
       CASE_OPTIONS,
       ALIGN_OPTIONS,
-      COLOR_OPTIONS
+      COLOR_OPTIONS,
+      ...SETTINGS
     };
   },
   computed: {
