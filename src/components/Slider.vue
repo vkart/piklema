@@ -105,6 +105,7 @@ export default {
     }
     :deep(.vue-slider-dot) {
       background-color: $color-grey;
+      transition: none !important;
     }
   }
 }
