@@ -120,6 +120,7 @@ export default {
   padding: 6px 0;
   color: $color-black;
   outline: none;
+  white-space: nowrap;
 }
 
 .Input-Input:focus {
