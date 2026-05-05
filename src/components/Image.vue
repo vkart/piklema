@@ -44,6 +44,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@use 'sass:math';
 @import '@/assets/scss/common.scss';
 
 .Image {
@@ -88,13 +89,13 @@ export default {
     .Image-Image { @include image(vertical, 1); }
   }
   &[data-ratio="6:5"][data-orientation="vertical"] {
-    .Image-Image { @include image(vertical, 6/5); }
+    .Image-Image { @include image(vertical, math.div(6, 5)); }
   }
   &[data-ratio="4:3"][data-orientation="vertical"] {
-    .Image-Image { @include image(vertical, 4/3); }
+    .Image-Image { @include image(vertical, math.div(4, 3)); }
   }
   &[data-ratio="3:2"][data-orientation="vertical"] {
-    .Image-Image { @include image(vertical, 3/2); }
+    .Image-Image { @include image(vertical, math.div(3, 2)); }
   }
   &[data-ratio="2:1"][data-orientation="vertical"] {
     .Image-Image { @include image(vertical, 2); }
@@ -103,20 +104,20 @@ export default {
     .Image-Image { @include image(vertical, 3); }
   }
   &[data-ratio="16:9"][data-orientation="vertical"] {
-    .Image-Image { @include image(vertical, 16/9); }
+    .Image-Image { @include image(vertical, math.div(16, 9)); }
   }
 
   &[data-ratio="1:1"][data-orientation="horizontal"] {
     .Image-Image { @include image(horizontal, 1); }
   }
   &[data-ratio="6:5"][data-orientation="horizontal"] {
-    .Image-Image { @include image(horizontal, 6/5); }
+    .Image-Image { @include image(horizontal, math.div(6, 5)); }
   }
   &[data-ratio="4:3"][data-orientation="horizontal"] {
-    .Image-Image { @include image(horizontal, 4/3); }
+    .Image-Image { @include image(horizontal, math.div(4, 3)); }
   }
   &[data-ratio="3:2"][data-orientation="horizontal"] {
-    .Image-Image { @include image(horizontal, 3/2); }
+    .Image-Image { @include image(horizontal, math.div(3, 2)); }
   }
   &[data-ratio="2:1"][data-orientation="horizontal"] {
     .Image-Image { @include image(horizontal, 2); }
@@ -125,7 +126,7 @@ export default {
     .Image-Image { @include image(horizontal, 3); }
   }
   &[data-ratio="16:9"][data-orientation="horizontal"] {
-    .Image-Image { @include image(horizontal, 16/9); }
+    .Image-Image { @include image(horizontal, math.div(16, 9)); }
   }
 }
 </style>

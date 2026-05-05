@@ -10,7 +10,7 @@
 
   @include text-compensation(-7px, -5px);
 
-  ::v-deep p + p {
+  :deep(p + p) {
     margin-top: 28px;
   }
 }
@@ -27,7 +27,7 @@
 
   @include text-compensation(-7px, -5px);
 
-  ::v-deep p + p {
+  :deep(p + p) {
     margin-top: 28px;
   }
 }
@@ -42,7 +42,7 @@
   font-size: 11.4px;
   line-height: 28px;
 
-  ::v-deep p + p {
+  :deep(p + p) {
     margin-top: 28px;
   }
 }
@@ -66,7 +66,7 @@
 
     @include text-compensation(-7px, -5px);
 
-    ::v-deep p + p {
+    :deep(p + p) {
       margin-top: 28px;
     }
   } @else {
@@ -76,7 +76,7 @@
 
     @include text-compensation(-5px, -3px);
 
-    ::v-deep p + p {
+    :deep(p + p) {
       margin-top: 20px;
     }
   }

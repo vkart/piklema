@@ -70,17 +70,17 @@ export default {
   display: flex;
   align-items: center;
 
-  ::v-deep .vue-slider {
+  :deep(.vue-slider) {
   }
-  ::v-deep .vue-slider-rail {
+  :deep(.vue-slider-rail) {
     height: 1px;
     background-color: $color-black;
   }
-  ::v-deep .vue-slider-process {
+  :deep(.vue-slider-process) {
     background-color: $color-black;
     height: 1px;
   }
-  ::v-deep .vue-slider-dot {
+  :deep(.vue-slider-dot) {
     width: 16px !important;
     height: 32px !important;
     border-radius: $microgrid;
@@ -88,8 +88,8 @@ export default {
   }
 
   &:hover {
-    ::v-deep .vue-slider-process,
-    ::v-deep .vue-slider-dot {
+    :deep(.vue-slider-process),
+    :deep(.vue-slider-dot) {
       background-color: $color-pink;
     }
   }
@@ -97,13 +97,13 @@ export default {
 
 .Slider[disabled] .Slider-Bar {
   &, &:hover {
-    ::v-deep .vue-slider-rail {
+    :deep(.vue-slider-rail) {
       background-color: $color-grey;
     }
-    ::v-deep .vue-slider-process {
+    :deep(.vue-slider-process) {
       background-color: $color-grey;
     }
-    ::v-deep .vue-slider-dot {
+    :deep(.vue-slider-dot) {
       background-color: $color-grey;
     }
   }

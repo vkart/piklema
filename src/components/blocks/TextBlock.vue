@@ -32,7 +32,7 @@ export default {
 @import '@/assets/scss/common.scss';
 
 .Block-Content {
-  ::v-deep em {
+  :deep(em) {
     @include Em;
   }
 

@@ -104,7 +104,7 @@ export default {
 }
 
 .Slideshow-Slide {
-  ::v-deep img {
+  :deep(img) {
     display: block;
     max-width: 100vw;
     max-height: 100vh;
