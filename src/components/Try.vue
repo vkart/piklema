@@ -9,21 +9,22 @@
       @mouseenter="onMouseEnter"
       @mouseleave="onMouseLeave"
     >
-      <div class="Try-Form">
-        <div class="Try-Header" data-mode="compact"><Localized :text="font.name" /></div>
-        <div class="Try-Fieldset">
-          <div class="Try-Row">
-            <div class="Try-Field">
-              <Select :options="fontOptions" size="S" v-model="currentFont" />
-            </div>
-            <div class="Try-Field">
-              <Selector :options="weights" size="S" v-model="fontWeight" v-if="weights.length > 1" />
-            </div>
-          </div>
+      <Form>
+        <div class="Try-Header" data-mode="compact">
+          <Localized :text="font.name" />
         </div>
-        <div class="Try-Fieldset">
-          <div class="Try-Field">
-            <div class="Try-Label">Font size</div>
+        <Fieldset>
+          <Row>
+            <Field>
+              <Select :options="fontOptions" size="S" v-model="currentFont" />
+            </Field>
+            <Field>
+              <Selector :options="weights" size="S" v-model="fontWeight" v-if="weights.length > 1" />
+            </Field>
+          </Row>
+        </Fieldset>
+        <Fieldset>
+          <Field label="Font size" direction="row">
             <Slider
               :min="FONT_SIZE_MIN"
               :max="FONT_SIZE_MAX"
@@ -31,9 +32,8 @@
               v-model="fontSize"
             />
             <Input type="number" v-model="fontSize" />
-          </div>
-          <div class="Try-Field">
-            <div class="Try-Label">Line height</div>
+          </Field>
+          <Field label="Line height" direction="row">
             <Slider
               :min="LINE_HEIGHT_MIN"
               :max="LINE_HEIGHT_MAX"
@@ -46,9 +46,8 @@
               v-model="lineHeight"
               :disabled="lockRatio ? 'disabled' : undefined"
             />
-          </div>
-          <div class="Try-Field">
-            <div class="Try-Label">Tracking</div>
+          </Field>
+          <Field label="Tracking" direction="row">
             <Slider
               :min="TRACKING_MIN"
               :max="TRACKING_MAX"
@@ -56,9 +55,8 @@
               v-model="letterSpacing"
             />
             <Input type="number" v-model="letterSpacing" />
-          </div>
-          <div class="Try-Field">
-            <div class="Try-Label">Cols</div>
+          </Field>
+          <Field label="Cols" direction="row">
             <Slider
               :min="COLS_MIN"
               :max="COLS_MAX"
@@ -66,41 +64,39 @@
               v-model="columns"
             />
             <Input type="number" v-model="columns" />
-          </div>
-          <div class="Try-Field">
+          </Field>
+          <Field>
             <Toggle label="Lock LH/FS ratio" size="S" v-model="lockRatio" />
-          </div>
-        </div>
-        <div class="Try-Fieldset">
-          <div class="Try-Row">
-            <div class="Try-Field">
-              <div class="Try-Label">Color</div>
+          </Field>
+        </Fieldset>
+        <Fieldset>
+          <Row>
+            <Field label="Color" direction="row">
               <Select :options="COLOR_OPTIONS" size="S" position="top" v-model="color" />
-            </div>
-            <div class="Try-Field">
-              <div class="Try-Label">Background</div>
+            </Field>
+            <Field label="Background" direction="row">
               <Select :options="COLOR_OPTIONS" size="S" position="top" v-model="backgroundColor" />
-            </div>
-          </div>
-        </div>
-        <div class="Try-Fieldset">
-          <div class="Try-Row">
-            <div class="Try-Field">
+            </Field>
+          </Row>
+        </Fieldset>
+        <Fieldset>
+          <Row>
+            <Field>
               <Selector :options="CASE_OPTIONS" size="S" v-model="textTransform" />
-            </div>
-            <div class="Try-Field">
+            </Field>
+            <Field>
               <Selector :options="ALIGN_OPTIONS" size="S" v-model="textAlign" />
-            </div>
-          </div>
-        </div>
-        <div class="Try-Fieldset">
+            </Field>
+          </Row>
+        </Fieldset>
+        <Fieldset>
           <template v-for="(set, index) in sets">
-            <div class="Try-Field">
+            <Field>
               <Toggle :label="set.name" size="S" v-model="sets[index].on" />
-            </div>
+            </Field>
           </template>
-        </div>
-      </div>
+        </Fieldset>
+      </Form>
     </div>
   </div>
 </template>
@@ -108,9 +104,13 @@
 <script>
 import { watchEffect } from 'vue';
 
+import Field from '@/components/Field.vue';
+import Fieldset from '@/components/Fieldset.vue';
+import Form from '@/components/Form.vue';
 import Input from '@/components/Input.vue';
 import Localized from '@/components/Localized.vue';
 import Toggle from '@/components/Toggle.vue';
+import Row from '@/components/Row.vue';
 import Slider from '@/components/Slider.vue';
 import Select from '@/components/Select.vue';
 import Selector from '@/components/Selector.vue';
@@ -122,7 +122,7 @@ const DEFAULT_FONT_SIZE = 96;
 const DEFAULT_LINE_HEIGHT = 72;
 const DEFAULT_TRACKING = 0;
 const DEFAULT_COLUMNS = 1;
-const HIDE_TIMEOUT = 1000;
+const HIDE_TIMEOUT = 100000000;
 
 const SETTINGS = {
   FONT_SIZE_MIN: 8,
@@ -175,9 +175,13 @@ const COLOR_OPTIONS = [
 export default {
   name: 'Try',
   components: {
+    Field,
+    Fieldset,
+    Form,
     Input,
     Localized,
     Toggle,
+    Row,
     Slider,
     Select,
     Selector
@@ -359,30 +363,9 @@ export default {
     height: 36px;
     width: grid(5);
 
-    .Try-Field {
+    .Field {
       opacity: 0;
     }
-  }
-}
-
-.Try-Form {
-  display: flex;
-  flex-direction: column;
-  gap: $grid + $gutter;
-}
-
-.Try-Fieldset {
-  display: flex;
-  flex-direction: column;
-  gap: $microgrid;
-}
-
-.Try-Row {
-  display: flex;
-  gap: $grid;
-
-  .Try-Field {
-    flex: 1;
   }
 }
 
@@ -390,21 +373,13 @@ export default {
   @include Interface(Mobile);
 }
 
-.Try-Label {
-  flex: 0 0 grid(5);
-  @include Interface(Mobile);
-  padding: $microgrid 0;
-  align-self: center;
-}
-
-.Try-Field {
-  display: flex;
-  gap: $microgrid;
+.Try .Field {
   transition: all 0.25s ease-in-out;
 
   .Slide, .Select {
     flex: 1;
   }
+
   .Input {
     flex: 0 0 grid(3);
   }
