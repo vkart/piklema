@@ -14,6 +14,5 @@ export default {
 .Fieldset {
   display: flex;
   flex-direction: column;
-  gap: $microgrid;
 }
 </style>
