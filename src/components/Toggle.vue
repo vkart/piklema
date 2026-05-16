@@ -8,19 +8,22 @@
   >
     <div class="Toggle-Toggle" />
     <div class="Toggle-Label">
-      {{ label }}
+      <Localized :text="label" />
       <slot />
     </div>
   </div>
 </template>
 
 <script>
+import Localized from '@/components/Localized.vue';
+
 export default {
   name: 'Toggle',
   components: {
+    Localized
   },
   props: {
-    label: String,
+    label: [String, Object],
     modifier: String,
     size: String, // S | M
     modelValue: Boolean
