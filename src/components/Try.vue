@@ -24,21 +24,23 @@
           </Row>
         </Fieldset>
         <Fieldset>
-          <Field label="Font size" direction="row">
+          <Field size="S" label="Font size" direction="row">
             <Slider
               :min="FONT_SIZE_MIN"
               :max="FONT_SIZE_MAX"
               :step="FONT_SIZE_STEP"
+              size="S"
               v-model="fontSize"
             />
             <Input type="number" v-model="fontSize" />
           </Field>
-          <Field label="Line height" direction="row">
+          <Field size="S" label="Line height" direction="row">
             <Slider
               :min="LINE_HEIGHT_MIN"
               :max="LINE_HEIGHT_MAX"
               :step="LINE_HEIGHT_STEP"
               :disabled="lockRatio ? 'disabled' : undefined"
+              size="S"
               v-model="lineHeight"
             />
             <Input
@@ -47,20 +49,22 @@
               :disabled="lockRatio ? 'disabled' : undefined"
             />
           </Field>
-          <Field label="Tracking" direction="row">
+          <Field size="S" label="Tracking" direction="row">
             <Slider
               :min="TRACKING_MIN"
               :max="TRACKING_MAX"
               step="0.1"
+              size="S"
               v-model="letterSpacing"
             />
             <Input type="number" v-model="letterSpacing" />
           </Field>
-          <Field label="Cols" direction="row">
+          <Field size="S" label="Cols" direction="row">
             <Slider
               :min="COLS_MIN"
               :max="COLS_MAX"
               step="1"
+              size="S"
               v-model="columns"
             />
             <Input type="number" v-model="columns" />
@@ -71,10 +75,10 @@
         </Fieldset>
         <Fieldset>
           <Row>
-            <Field label="Color" direction="row">
+            <Field size="S" label="Color" direction="row">
               <Select :options="COLOR_OPTIONS" size="S" position="top" v-model="color" />
             </Field>
-            <Field label="Background" direction="row">
+            <Field size="S" label="Background" direction="row">
               <Select :options="COLOR_OPTIONS" size="S" position="top" v-model="backgroundColor" />
             </Field>
           </Row>
@@ -122,7 +126,7 @@ const DEFAULT_FONT_SIZE = 96;
 const DEFAULT_LINE_HEIGHT = 72;
 const DEFAULT_TRACKING = 0;
 const DEFAULT_COLUMNS = 1;
-const HIDE_TIMEOUT = 100000000;
+const HIDE_TIMEOUT = 1000;
 
 const SETTINGS = {
   FONT_SIZE_MIN: 8,
@@ -193,7 +197,7 @@ export default {
     const font = this.font;
     const q = this.$route.query;
     const features = q.ff ? q.ff.split(',') : [];
-    const sets = font.try.sets.map(set => ({
+    const sets = font.sets.map(set => ({
       ...set,
       on: features.includes(set.value)
     }));
@@ -203,7 +207,7 @@ export default {
     }));
 
     const initial = {
-      fontWeight: q.fw || font.try.weights[0].value,
+      fontWeight: q.fw || font.weights[0].value,
       fontSize: Number(q.fs) || DEFAULT_FONT_SIZE,
       lineHeight: Number(q.lh) || DEFAULT_LINE_HEIGHT,
       letterSpacing: Number(q.ls) || DEFAULT_TRACKING,
@@ -234,7 +238,7 @@ export default {
       color: initial.color,
       backgroundColor: initial.backgroundColor,
       sets: initial.sets,
-      weights: font.try.weights,
+      weights: font.weights,
       CASE_OPTIONS,
       ALIGN_OPTIONS,
       COLOR_OPTIONS,
@@ -345,7 +349,7 @@ export default {
   bottom: $microgrid;
   left: $microgrid;
   padding: $microgrid;
-  overflow: hidden;
+  overflow: auto;
   transition: all 0.25s ease-in-out;
   color: $color-black;
   background-color: $color-yellow;
@@ -356,6 +360,7 @@ export default {
 
     [data-mode="compact"] {
       display: none;
+      overflow: hidden;
     }
   }
 
@@ -383,5 +388,9 @@ export default {
   .Input {
     flex: 0 0 grid(3);
   }
+}
+
+.Try .Fieldset {
+  gap: $microgrid;
 }
 </style>

@@ -17,12 +17,16 @@ export default {
   },
   try: {
     family: 'Plastinka-Trial',
-    file: '',
-    weights: [{
-      name: 'reg',
-      value: '400'
-    }],
-    sets: []
+    file: ''
+  },
+  weights: [{
+    name: 'reg',
+    value: '400'
+  }],
+  sets: [],
+  price: {
+    desktop: 100, // per 1 user
+    web: 0.001 // per 10000 views
   },
   teaser: {
     src: 'fonts/plastinka/plastinka-teaser.png'
