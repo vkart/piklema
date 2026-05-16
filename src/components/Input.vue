@@ -6,6 +6,7 @@
     :data-size="size || 'M'"
     :data-view="view || 'default'"
     :data-error="error ? error : undefined"
+    :data-rows="rows || 1"
   >
     <div class="Input-Icon" v-if="iconLeft">
       <Icon class="Icon" :name="iconLeft" />
@@ -19,7 +20,9 @@
         @input="onInput"
         v-text="modelValue"
       />
-      <div class="Input-Placeholder" v-text="placeholder" v-if="empty" />
+      <div class="Input-Placeholder" v-if="empty">
+        <Localized :text="placeholder"/>
+      </div>
     </div>
     <div class="Input-Note" v-if="note" v-text="note" />
     <div class="Input-Icon" v-if="icon">
@@ -39,22 +42,25 @@
 import { saveCaretPosition, restoreCaretPosition } from '@/lib/browserUtils.js';
 import Button from '@/components/Button.vue';
 import Icon from '@/components/Icon.vue';
+import Localized from '@/components/Localized.vue';
 
 export default {
   name: 'Input',
   components: {
     Button,
-    Icon
+    Icon,
+    Localized
   },
   props: {
     type: String,
     icon: String,
     iconLeft: String,
     error: String,
-    placeholder: String,
+    placeholder: [String, Object],
     modelValue: [Number, String],
     size: String, // L | M | S
-    view: String // default | borderless | border-bottom
+    view: String, // default | borderless | border-bottom
+    rows: [Number, String]
   },
   emits: ['update:modelValue'],
   data () {
@@ -65,7 +71,13 @@ export default {
   },
   computed: {
     empty () {
-      return this.modelValue === undefined || this.modelValue === null;
+      const value = this.modelValue;
+
+      if (value === undefined || value === null) return true;
+
+      if (typeof value === 'string' && value.replace(/(\r\n|\n|\r)/gm, '') === '') return true;
+
+      return false;
     }
   },
   methods: {
@@ -99,8 +111,11 @@ export default {
 @import '@/assets/scss/common.scss';
 
 .Input {
+  --row-height: 28px;
+  position: relative;
   background-color: $color-mustard;
   display: flex;
+  min-height: calc(var(--row-height) * attr(data-rows number, 1));
 }
 
 .Input-Icon,
@@ -111,15 +126,36 @@ export default {
 
 .Input-Wrapper {
   flex: 1;
+  display: flex;
 }
 
 .Input-Input,
 .Input-Placeholder {
   @include no-select;
+  width: 100%;
   @include Interface;
   padding: 6px 0;
+}
+
+.Input-Input {
   color: $color-black;
+  position: relative;
   outline: none;
+  z-index: 2;
+}
+
+.Input-Placeholder {
+  /* Standard input placeholder forces `line-height: normal` */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  color: $color-olive;
+}
+
+.Input[type="number"],
+.Input[type="text"] {
   white-space: nowrap;
 }
 
@@ -141,4 +177,3 @@ export default {
   }
 }
 </style>
-
