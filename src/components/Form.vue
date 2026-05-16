@@ -15,5 +15,10 @@ export default {
   display: flex;
   flex-direction: column;
   gap: $grid + $gutter;
+
+  :deep(.Button) {
+    flex: 0 0 auto;
+    align-self: flex-start;
+  }
 }
 </style>
