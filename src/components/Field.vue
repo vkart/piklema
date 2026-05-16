@@ -1,7 +1,16 @@
 <template>
-  <div class="Field" :data-direction="direction || 'column'">
-    <div class="Field-Label" v-if="label"><Localized :text="label" /></div>
-    <div class="Field-Content"><slot></slot></div>
+  <div
+    class="Field"
+    :data-direction="direction || 'column'"
+    :data-size="size || 'M'"
+  >
+    <div class="Field-Header" v-if="label || counter !== undefined">
+      <div class="Field-Label"><Localized :text="label" /></div>
+      <div class="Field-Counter" v-if="counter !== undefined">
+        <Localized :text="units" />: {{counter}}
+      </div>
+    </div>
+    <div class="Field-Content" v-if="$slots.default"><slot></slot></div>
   </div>
 </template>
 
@@ -14,8 +23,11 @@ export default {
     Localized
   },
   props: {
+    size: String, // S | M
     label: [Object, String],
-    direction: String // column | row
+    direction: String, // column | row
+    counter: [Number, String],
+    units: String
   }
 };
 </script>
@@ -26,17 +38,27 @@ export default {
 .Field {
   display: flex;
   gap: $microgrid;
+
+  &[data-direction="column"] {
+    flex-direction: column;
+  }
 }
 
-.Field[direction="column"] {
-  flex-direction: column;
+.Field-Header {
+  display: flex;
+
+  :deep(> *) {
+    flex: 1;
+  }
 }
 
 .Field-Label {
-  flex: 0 0 grid(5);
-  @include Interface(Mobile);
-  padding: $microgrid 0;
   align-self: center;
+}
+
+.Field-Counter {
+  align-self: center;
+  text-align: right;
 }
 
 .Field-Content {
@@ -46,6 +68,30 @@ export default {
 
   :deep(> *) {
     flex: 1;
+  }
+}
+
+.Field[data-size="M"] {
+  padding-top: 12px;
+  gap: 12px;
+
+  .Field-Label,
+  .Field-Counter {
+    @include Interface();
+    text-transform: uppercase;
+    padding: 0;
+  }
+}
+
+.Field[data-size="S"] {
+  .Field-Label {
+    @include Interface(Mobile);
+    padding: $microgrid 0;
+  }
+
+  .Field-Counter {
+    @include Interface(Mobile);
+    padding: $microgrid 0;
   }
 }
 </style>
