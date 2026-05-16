@@ -7,8 +7,8 @@
       radius="none"
     />
     <Button :href="font.specimen.href" hrefTarget="_blank">spec</Button>
-    <Button :href="`/try/${font.id}`">trial</Button>
-    <Button>buy</Button>
+    <Button :href="`/try/${font.id}`" hrefTarget="_blank">trial</Button>
+    <Button @click.stop="$emit('buy')">buy</Button>
   </div>
 </template>
 
@@ -17,6 +17,7 @@ import Button from '@/components/Button.vue';
 
 export default {
   name: 'FontMenu',
+  emits: ['buy'],
   components: {
     Button
   },

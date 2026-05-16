@@ -1,13 +1,18 @@
 <template>
   <main class="Font" v-if="font">
-    <FontMenu :font="font" />
+    <FontMenu :font="font" @buy="toggleForm(true)" />
     <Page :content="font.content" />
+    <Overlay v-show="showForm">
+      <Purchase :font="font" @close="toggleForm(false)" />
+    </Overlay>
   </main>
 </template>
 
 <script>
 import FontMenu from '@/components/FontMenu.vue';
 import Page from '@/components/Page.vue';
+import Overlay from '@/components/Overlay.vue';
+import Purchase from '@/components/Purchase.vue';
 
 import fonts from '@/data/fonts.js';
 import { store } from '@/store/store.js';
@@ -16,14 +21,17 @@ export default {
   name: 'FontView',
   components: {
     FontMenu,
-    Page
+    Overlay,
+    Page,
+    Purchase
   },
   props: {
     id: String
   },
   data () {
     return {
-      font: null
+      font: null,
+      showForm: false
     };
   },
   beforeRouteEnter (to, from, next) {
@@ -45,6 +53,10 @@ export default {
     setFont (font) {
       this.font = font;
       store.setPageName(font.id);
+    },
+    toggleForm (state) {
+      console.log('TOGGLE FORM', state);
+      this.showForm = state;
     }
   }
 };
