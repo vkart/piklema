@@ -1,5 +1,9 @@
 <template>
-  <div class="Slider" :disabled="disabled ? 'disabled' : undefined">
+  <div
+    class="Slider"
+    :disabled="disabled ? 'disabled' : undefined"
+    :data-size="size || 'M'"
+  >
     <slot />
     <VueSlider
       v-model="value"
@@ -32,6 +36,7 @@ export default {
     min: [Number, String],
     max: [Number, String],
     step: [Number, String],
+    size: String, // S | M
     disabled: Boolean,
     modelValue: Number
   },
@@ -59,13 +64,10 @@ export default {
 
 .Slider {
   width: 100%;
-  height: 32px;
 }
 
 .Slider-Bar {
   flex: 1;
-  height: 32px !important;
-  padding: 0 8px !important;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -81,8 +83,6 @@ export default {
     height: 1px;
   }
   :deep(.vue-slider-dot) {
-    width: 16px !important;
-    height: 32px !important;
     border-radius: $microgrid;
     background-color: $color-black;
   }
@@ -92,6 +92,36 @@ export default {
     :deep(.vue-slider-dot) {
       background-color: $color-pink;
     }
+  }
+}
+
+.Slider[data-size="S"] {
+  .Slider {
+    height: 32px;
+  }
+  .Slider-Bar {
+    flex: 1;
+    height: 32px !important;
+    padding: 0 8px !important;
+  }
+  :deep(.vue-slider-dot) {
+    width: 16px !important;
+    height: 32px !important;
+  }
+}
+
+.Slider[data-size="M"] {
+  .Slider {
+    height: 72px;
+  }
+  .Slider-Bar {
+    flex: 1;
+    height: 72px !important;
+    padding: 0 16px !important;
+  }
+  :deep(.vue-slider-dot) {
+    width: 32px !important;
+    height: 72px !important;
   }
 }
 
