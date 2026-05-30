@@ -9,13 +9,13 @@ export default {
     file: ''
   },
   weights: [{
-    name: 'norm',
+    name: 'normal',
     value: '400'
   }, {
     name: 'text',
     value: '500'
   }, {
-    name: 'semi',
+    name: 'semibold',
     value: '600'
   }, {
     name: 'bold',
