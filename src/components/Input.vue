@@ -7,6 +7,7 @@
     :data-view="view || 'default'"
     :data-error="error ? error : undefined"
     :data-rows="rows || 1"
+    :disabled="disabled ? disabled : undefined"
   >
     <div class="Input-Icon" v-if="iconLeft">
       <Icon class="Icon" :name="iconLeft" />
@@ -55,6 +56,7 @@ export default {
     type: String,
     icon: String,
     iconLeft: String,
+    disabled: Boolean,
     error: String,
     placeholder: [String, Object],
     modelValue: [Number, String],
