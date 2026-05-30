@@ -27,7 +27,7 @@ export default {
     label: [Object, String],
     direction: String, // column | row
     counter: [Number, String],
-    units: String
+    units: [Object, String]
   }
 };
 </script>
