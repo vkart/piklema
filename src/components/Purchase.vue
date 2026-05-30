@@ -1,56 +1,110 @@
 <template>
-  <div class="Purchase" v-click-outside="close">
+  <div class="Purchase" :data-state="state" v-click-outside="close">
     <Form>
       <Fieldset>
         <Field>
           <Row>
-            <template v-for="(weight, index) in weights">
-              <Toggle :label="weight.name" v-model="weights[index].checked"/>
+            <Toggle
+              :label="text.all"
+              v-model="checkAllWeights"
+              @toggle="toggleWeights"
+            />
+            <template v-for="(weight, index) in form.weights">
+              <Toggle
+                :label="weight.name"
+                :disabled="disabled"
+                v-model="form.weights[index].checked"
+                @toggle="updateAllCheckbox"
+              />
             </template>
           </Row>
         </Field>
       </Fieldset>
-      {{count}} — {{price}}
       <Fieldset>
-        <Field label="Desktop license" :counter="desktopCount" units="users">
+        <Field
+          :label="text.desktop"
+          :counter="form.desktopCount"
+          :units="text.users"
+        >
           <Slider
             :min="DESKTOP_MIN"
             :max="DESKTOP_MAX"
             :step="DESKTOP_STEP"
-            v-model="desktopCount"
+            :disabled="disabled"
+            v-model="form.desktopCount"
           />
         </Field>
-        <Field label="Web license" :counter="webCount" units="views/month">
+        <Field :label="text.web" :counter="form.webCount" :units="text.views">
           <Slider
             :min="WEB_MIN"
             :max="WEB_MAX"
             :step="WEB_STEP"
-            v-model="webCount"
+            :disabled="disabled"
+            v-model="form.webCount"
           />
         </Field>
-        <Field label="" units="TOTAL" :counter="`\$${price}`"/>
+        <Field label="" :units="text.total" :counter="`\$${total}`"/>
+      </Fieldset>
+      <Fieldset>
         <Field>
-          <Input type="textarea" v-model="comment" :placeholder="text.comment" rows="2" />
+          <Input
+            type="textarea"
+            v-model="form.comment"
+            :placeholder="text.comment"
+            :disabled="disabled"
+            rows="2"
+          />
         </Field>
       </Fieldset>
       <Fieldset>
         <Row>
           <Field>
-            <Input type="text" v-model="name" :placeholder="text.name" />
+            <Input
+              type="text"
+              v-model="form.name"
+              :placeholder="text.name"
+              :disabled="disabled"
+            />
           </Field>
           <Field>
-            <Input type="text" v-model="email" :placeholder="text.email" />
+            <Input
+              type="text"
+              v-model="form.email"
+              :placeholder="text.email"
+              :disabled="disabled"
+            />
           </Field>
         </Row>
         <Field>
-          <Toggle :label="text.agree" v-model="agree" />
+          <Toggle :label="text.agree" v-model="form.agree" :disabled="disabled" />
         </Field>
         <div class="Purchase-Disclaimer">
           <Localized :text="text.disclaimer"/>
         </div>
       </Fieldset>
       <Fieldset>
-        <Button color="black+yellow" size="small" radius="round">Order</Button>
+        <Row>
+          <Button
+            color="black+yellow"
+            size="small"
+            radius="round"
+            :disabled="disabled"
+            :label="text.order"
+            @click="order"
+            v-if="state !== 'success'"
+          />
+          <Button
+            color="black+yellow"
+            size="small"
+            radius="round"
+            @click="close"
+            v-if="state === 'success'"
+          >OK</Button>
+          <div class="Purchase-Message" v-if="message">
+            <Localized :text="message"/>
+            <div class="Purchase-MessageDetails" v-text="details" />
+          </div>
+        </Row>
       </Fieldset>
     </Form>
   </div>
@@ -59,6 +113,7 @@
 <script>
 import { ref } from 'vue';
 import { clickOutside } from '@/directives/clickOutside';
+import { supabase } from '@/lib/supabase';
 
 import Button from '@/components/Button.vue';
 import Field from '@/components/Field.vue';
@@ -97,9 +152,7 @@ export default {
     Localized,
     Toggle,
     Row,
-    Slider,
-    Select,
-    Selector
+    Slider
   },
   props: {
     font: Object
@@ -119,26 +172,30 @@ export default {
 
     return {
       text: text.buy,
-      desktopCount: 1,
-      webCount: 0,
-      comment: undefined,
-      name: undefined,
-      email: undefined,
-      agree: undefined,
-      weights,
+      message: undefined,
+      details: undefined,
+      state: 'default',
+      disabled: false,
+      form: {
+        desktopCount: 1,
+        webCount: 0,
+        comment: undefined,
+        name: undefined,
+        email: undefined,
+        agree: undefined,
+        weights
+      },
+      checkAllWeights: false,
       ...SETTINGS
     };
   },
   computed: {
     count () {
-      const ret = this.weights.filter(w => w.checked).length;
-
-      console.log('COMPUTE COUNT', this.weights, ret);
-
-      return ret;
+      return this.form.weights.filter(w => w.checked).length;
     },
-    price () {
-      const { count, webCount, desktopCount, font } = this;
+    total () {
+      const { count, font } = this;
+      const { webCount, desktopCount } = this.form;
       const { price } = font;
 
       return count * (webCount * price.web + desktopCount * price.desktop);
@@ -146,14 +203,71 @@ export default {
   },
   methods: {
     close () {
-      console.log('CLOSE');
+      this.reset();
       this.$emit('close');
+    },
+    reset () {
+      this.disabled = false;
+      this.setState('default');
     },
     onKeyDown (e) {
       switch (e.key) {
         case 'Escape':
           this.close();
           break;
+      }
+    },
+    setState (state, details) {
+      const text = this.text.states[state];
+
+      this.message = text || undefined;
+      this.details = details || undefined;
+      this.state = state;
+    },
+    toggleWeights (checked) {
+      this.form.weights.forEach(w => { w.checked = checked; });
+    },
+    updateAllCheckbox (checked) {
+      this.checkAllWeights = this.form.weights.length === this.count;
+    },
+    async order () {
+      const { font, total } = this;
+      const {
+        webCount,
+        desktopCount,
+        comment,
+        name,
+        email
+      } = this.form;
+
+      const weights = this.form.weights
+        .filter(w => w.checked)
+        .map(w => w.name)
+        .join(',');
+
+      const order = {
+        items: [{
+          font: font.id,
+          weights,
+          web: webCount,
+          desktop: desktopCount
+        }],
+        total,
+        name,
+        email,
+        comment
+      };
+
+      this.setState('sending');
+      this.disabled = true;
+
+      const resp = await supabase.from('orders').insert(order);
+
+      if (resp.error) {
+        this.setState('error', resp.error.message);
+        this.disabled = false;
+      } else {
+        this.setState('success');
       }
     }
   },
@@ -178,9 +292,9 @@ export default {
   width: grid(35);
   max-height: calc(100vh - 2 * $grid);
 
+  :deep(.Toggle-Label),
   :deep(.Input-Input),
-  :deep(.Input-Placeholder),
-  :deep(.Text) {
+  :deep(.Input-Placeholder) {
     text-transform: uppercase;
   }
 }
@@ -189,5 +303,17 @@ export default {
   @include Interface;
   padding: 12px 0;
   text-transform: uppercase;
+}
+
+.Purchase-Message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Purchase[data-state="error"] {
+  .Purchase-Message {
+    color: $color-red;
+  }
 }
 </style>
