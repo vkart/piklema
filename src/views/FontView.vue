@@ -55,7 +55,6 @@ export default {
       store.setPageName(font.id);
     },
     toggleForm (state) {
-      console.log('TOGGLE FORM', state);
       this.showForm = state;
     }
   }
