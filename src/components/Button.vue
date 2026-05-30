@@ -137,11 +137,19 @@ export default {
 .Button[data-color="black"] {
   background-color: $color-black;
   color: $color-grey;
+
+  &[disabled] {
+    background-color: $color-grey;
+  }
 }
 
 .Button[data-color="black+yellow"] {
   background-color: $color-black;
   color: $color-yellow;
+
+  &[disabled] {
+    background-color: $color-grey;
+  }
 }
 
 .Button[data-color="green"] {
