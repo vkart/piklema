@@ -4,6 +4,7 @@
     :data-checked="_checked ? true : undefined"
     :data-modifier="modifier ? modifier : undefined"
     :data-size="size ? size : undefined"
+    :data-disabled="disabled ? disabled : undefined"
     @click.stop="toggle"
   >
     <div class="Toggle-Toggle" />
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+import { watchEffect } from 'vue';
 import Localized from '@/components/Localized.vue';
 
 export default {
@@ -26,9 +28,10 @@ export default {
     label: [String, Object],
     modifier: String,
     size: String, // S | M
+    disabled: Boolean,
     modelValue: Boolean
   },
-  emits: ['update:modelValue'],
+  emits: ['toggle', 'update:modelValue'],
   data () {
     return {
       _checked: this.modelValue || false
@@ -36,10 +39,18 @@ export default {
   },
   methods: {
     toggle () {
+      if (this.disabled) return;
+
       this._checked = !this._checked;
 
       this.$emit('update:modelValue', this._checked);
+      this.$emit('toggle', this._checked);
     }
+  },
+  mounted () {
+    watchEffect(() => {
+      this._checked = this.modelValue;
+    });
   }
 };
 </script>
@@ -82,6 +93,20 @@ export default {
   .Toggle-Label {
     @include Interface(Mobile);
     padding: 4px 0;
+  }
+}
+
+.Toggle[data-disabled] {
+  color: $color-grey;
+
+  .Toggle-Toggle {
+    box-shadow: inset 0 -2px 4px $color-grey;
+  }
+}
+
+.Toggle[data-disabled][data-checked] {
+  .Toggle-Toggle {
+    background-color: $color-grey;
   }
 }
 </style>
