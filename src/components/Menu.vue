@@ -34,6 +34,7 @@ export default {
   },
   props: {
     menu: Array,
+    togglable: Boolean,
     language: Boolean
   },
   emits: ['click'],
@@ -53,7 +54,9 @@ export default {
 
       if (item.href || isSubmenuOpen) return;
 
-      if (item.items) {
+      if (item === this.selected && this.togglable) {
+        item = null;
+      } else if (item.items) {
         this.submenu = item.items;
       }
 
