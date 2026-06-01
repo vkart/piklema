@@ -1,13 +1,12 @@
 <template>
-  <main class="Case" v-if="item">
-    <Image class="Case-Hero" :image="item.heroImage" />
-    <Menu :menu="items" @click="setItem" />
-    <Page :content="item.content" />
+  <main class="Case">
+    <Menu :menu="items" :togglable="true" @click="setItem" />
+    <Page :content="item ? item.content : defaultContent" />
   </main>
 </template>
 
 <script>
-import Image from '@/components/Image.vue';
+import { shuffle } from '@/lib/utils.js';
 import Menu from '@/components/Menu.vue';
 import Page from '@/components/Page.vue';
 
@@ -17,7 +16,6 @@ import { store } from '@/store/store.js';
 export default {
   name: 'CaseView',
   components: {
-    Image,
     Menu,
     Page
   },
@@ -25,7 +23,10 @@ export default {
     id: String
   },
   data () {
+    const defaultContent = this.buildDefaultContent(items);
+
     return {
+      defaultContent,
       item: null,
       items
     };
@@ -34,24 +35,46 @@ export default {
     const id = to.params.id;
     const item = items.find(el => el.id === id);
 
-    next(vm => vm.setItem(item || items[0]));
+    next(vm => vm.setItem(item || null));
   },
   beforeRouterLeave () {
     store.removePageName(undefined);
   },
+  computed: {
+    content () {
+      return this.item ? this.item.content : this.defaultContent;
+    }
+  },
   methods: {
     setItem (item) {
-      const update = !this.item;
-      this.item = item;
-      store.setPageName(item.id);
+      const update = item !== this.item;
 
-      const route = `/cases/${item.id}`;
+      this.item = update ? item : null;
+      store.setPageName(item ? item.id : 'Services');
 
-      if (update) {
-        this.$router.push(route);
-      } else {
-        history.pushState({}, null, route);
-      }
+      const route = this.item ? `/cases/${this.item.id}` : '/cases';
+
+      this.$router.push(route);
+    },
+    buildDefaultContent (items) {
+      const images = items.map(item => {
+        if (!item.content) return [];
+
+        const grid = item.content.find(el => el.type === 'Grid');
+
+        if (!grid) return [];
+
+        return grid.items;
+      });
+
+      const shuffled = images.flat(1);
+
+      shuffle(shuffled);
+
+      return [{
+        type: 'Grid',
+        items: shuffled
+      }];
     }
   }
 };
