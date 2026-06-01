@@ -13,13 +13,6 @@ export default {
   },
   content: [
     {
-      type: 'Text',
-      text: {
-        ru: 'We designed two typefaces for the International Olympic Committee — a matching sans and serif ideal for streaming. Commissioned by Hulse & Durrell as part of its digital-focused brand refresh, the typefaces balance the old and the new. Helping bring the Olympic Gamesinto the future via online channels.',
-        en: 'We designed two typefaces for the International Olympic Committee — a matching sans and serif ideal for streaming. Commissioned by Hulse & Durrell as part of its digital-focused brand refresh, the typefaces balance the old and the new. Helping bring the Olympic Gamesinto the future via online channels.'
-      }
-    },
-    {
       type: 'Grid',
       items: [{
         type: 'Image',
@@ -316,6 +309,13 @@ export default {
         orientation: 'horizontal',
         ratio: '16:9'
       }]
+    },
+    {
+      type: 'Text',
+      text: {
+        ru: 'We designed two typefaces for the International Olympic Committee — a matching sans and serif ideal for streaming. Commissioned by Hulse & Durrell as part of its digital-focused brand refresh, the typefaces balance the old and the new. Helping bring the Olympic Gamesinto the future via online channels.',
+        en: 'We designed two typefaces for the International Olympic Committee — a matching sans and serif ideal for streaming. Commissioned by Hulse & Durrell as part of its digital-focused brand refresh, the typefaces balance the old and the new. Helping bring the Olympic Gamesinto the future via online channels.'
+      }
     },
     {
       type: 'Text',

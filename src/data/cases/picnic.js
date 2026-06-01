@@ -13,255 +13,295 @@ export default {
   },
   content: [
     {
-      type: 'Text',
-      text: {
-        ru: 'We designed two typefaces for the International Olympic Committee — a matching sans and serif ideal for streaming. Commissioned by Hulse & Durrell as part of its digital-focused brand refresh, the typefaces balance the old and the new. Helping bring the Olympic Gamesinto the future via online channels.',
-        en: 'We designed two typefaces for the International Olympic Committee — a matching sans and serif ideal for streaming. Commissioned by Hulse & Durrell as part of its digital-focused brand refresh, the typefaces balance the old and the new. Helping bring the Olympic Gamesinto the future via online channels.'
-      }
-    },
-    {
       type: 'Grid',
       items: [{
         type: 'Image',
-        src: 'cases/picnic/Picture-0.jpg',
+        src: 'cases/picnic/preview/Picture-0.jpg',
+        full: 'cases/picnic/full/Picnic24_0.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-1.jpg',
+        src: 'cases/picnic/preview/Picture-1.jpg',
+        full: 'cases/picnic/full/Picnic24_1.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-2.jpg',
+        src: 'cases/picnic/preview/Picture-2.jpg',
+        full: 'cases/picnic/full/Picnic24_2.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-3.jpg',
+        src: 'cases/picnic/preview/Picture-3.jpg',
+        full: 'cases/picnic/full/Picnic24_3.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-4.jpg',
+        src: 'cases/picnic/preview/Picture-4.jpg',
+        full: 'cases/picnic/full/Picnic24_4.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-5.jpg',
+        src: 'cases/picnic/preview/Picture-5.jpg',
+        full: 'cases/picnic/full/Picnic24_5.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-6.jpg',
+        src: 'cases/picnic/preview/Picture-6.jpg',
+        full: 'cases/picnic/full/Picnic24_6.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-7.jpg',
+        src: 'cases/picnic/preview/Picture-7.jpg',
+        full: 'cases/picnic/full/Picnic24_7.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-8.jpg',
+        src: 'cases/picnic/preview/Picture-8.jpg',
+        full: 'cases/picnic/full/Picnic24_8.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-9.jpg',
+        src: 'cases/picnic/preview/Picture-9.jpg',
+        full: 'cases/picnic/full/Picnic24_9.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-10.jpg',
+        src: 'cases/picnic/preview/Picture-10.jpg',
+        full: 'cases/picnic/full/Picnic24_10.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-11.jpg',
+        src: 'cases/picnic/preview/Picture-11.jpg',
+        full: 'cases/picnic/full/Picnic24_11.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-12.jpg',
+        src: 'cases/picnic/preview/Picture-12.jpg',
+        full: 'cases/picnic/full/Picnic24_12.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-13.jpg',
+        src: 'cases/picnic/preview/Picture-13.jpg',
+        full: 'cases/picnic/full/Picnic24_13.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-14.jpg',
+        src: 'cases/picnic/preview/Picture-14.jpg',
+        full: 'cases/picnic/full/Picnic24_14.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-15.jpg',
+        src: 'cases/picnic/preview/Picture-15.jpg',
+        full: 'cases/picnic/full/Picnic24_15.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-16.jpg',
+        src: 'cases/picnic/preview/Picture-16.jpg',
+        full: 'cases/picnic/full/Picnic24_16.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-17.jpg',
+        src: 'cases/picnic/preview/Picture-17.jpg',
+        full: 'cases/picnic/full/Picnic24_17.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-18.jpg',
+        src: 'cases/picnic/preview/Picture-18.jpg',
+        full: 'cases/picnic/full/Picnic24_18.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-19.jpg',
+        src: 'cases/picnic/preview/Picture-19.jpg',
+        full: 'cases/picnic/full/Picnic24_19.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-20.jpg',
+        src: 'cases/picnic/preview/Picture-20.jpg',
+        full: 'cases/picnic/full/Picnic24_20.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-21.jpg',
+        src: 'cases/picnic/preview/Picture-21.jpg',
+        full: 'cases/picnic/full/Picnic24_21.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-22.jpg',
+        src: 'cases/picnic/preview/Picture-22.jpg',
+        full: 'cases/picnic/full/Picnic24_22.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-23.jpg',
+        src: 'cases/picnic/preview/Picture-23.jpg',
+        full: 'cases/picnic/full/Picnic24_23.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-24.jpg',
+        src: 'cases/picnic/preview/Picture-24.jpg',
+        full: 'cases/picnic/full/Picnic24_24.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-25.jpg',
+        src: 'cases/picnic/preview/Picture-25.jpg',
+        full: 'cases/picnic/full/Picnic24_25.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-26.jpg',
+        src: 'cases/picnic/preview/Picture-26.jpg',
+        full: 'cases/picnic/full/Picnic24_26.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-27.jpg',
+        src: 'cases/picnic/preview/Picture-27.jpg',
+        full: 'cases/picnic/full/Picnic24_27.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-28.jpg',
+        src: 'cases/picnic/preview/Picture-28.jpg',
+        full: 'cases/picnic/full/Picnic24_28.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-29.jpg',
+        src: 'cases/picnic/preview/Picture-29.jpg',
+        full: 'cases/picnic/full/Picnic24_29.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-30.jpg',
+        src: 'cases/picnic/preview/Picture-30.jpg',
+        full: 'cases/picnic/full/Picnic24_30.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-31.jpg',
+        src: 'cases/picnic/preview/Picture-31.jpg',
+        full: 'cases/picnic/full/Picnic24_31.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-32.jpg',
+        src: 'cases/picnic/preview/Picture-32.jpg',
+        full: 'cases/picnic/full/Picnic24_32.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-33.jpg',
+        src: 'cases/picnic/preview/Picture-33.jpg',
+        full: 'cases/picnic/full/Picnic24_33.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-34.jpg',
+        src: 'cases/picnic/preview/Picture-34.jpg',
+        full: 'cases/picnic/full/Picnic24_34.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-35.jpg',
+        src: 'cases/picnic/preview/Picture-35.jpg',
+        full: 'cases/picnic/full/Picnic24_35.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-36.jpg',
+        src: 'cases/picnic/preview/Picture-36.jpg',
+        full: 'cases/picnic/full/Picnic24_36.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-37.jpg',
+        src: 'cases/picnic/preview/Picture-37.jpg',
+        full: 'cases/picnic/full/Picnic24_37.png',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-38.jpg',
+        src: 'cases/picnic/preview/Picture-38.jpg',
+        full: 'cases/picnic/full/Picnic24_38.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }, {
         type: 'Image',
-        src: 'cases/picnic/Picture-39.jpg',
+        src: 'cases/picnic/preview/Picture-39.jpg',
+        full: 'cases/picnic/full/Picnic24_39.jpg',
         size: 3,
         orientation: 'horizontal',
         ratio: '16:9'
       }]
+    },
+    {
+      type: 'Text',
+      text: {
+        ru: 'We designed two typefaces for the International Olympic Committee — a matching sans and serif ideal for streaming. Commissioned by Hulse & Durrell as part of its digital-focused brand refresh, the typefaces balance the old and the new. Helping bring the Olympic Gamesinto the future via online channels.',
+        en: 'We designed two typefaces for the International Olympic Committee — a matching sans and serif ideal for streaming. Commissioned by Hulse & Durrell as part of its digital-focused brand refresh, the typefaces balance the old and the new. Helping bring the Olympic Gamesinto the future via online channels.'
+      }
     },
     {
       type: 'Text',
