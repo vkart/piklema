@@ -37,7 +37,7 @@
   @if $orientation == vertical {
     width: round((var(--size) * $grid + (var(--size) - 1) * $gutter) / $ratio, 8px);
   } @else {
-
+    width: round((var(--size) * $grid + (var(--size) - 1) * $gutter) * $ratio, 8px);
   }
 }
 

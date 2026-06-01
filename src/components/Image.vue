@@ -58,6 +58,7 @@ export default {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-color: $color-grey;
 }
 
 .Image[data-fit="contain"] {
