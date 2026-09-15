@@ -23,7 +23,7 @@ export default {
       htmlAttrs: {
         lang: store.lang // Needed for hyphenation to work correctly
       },
-      title: 'Timeline'
+      title: 'Piklema Timeline'
     });
   }
 };
