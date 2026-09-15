@@ -1,0 +1,303 @@
+[
+  {
+    "LOAD_ID": 1,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 11:13:30",
+    "MANUAL_END": "2026-07-06 11:16:10",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 2,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 11:18:17",
+    "MANUAL_END": "2026-07-06 11:21:00",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 3,
+    "BUCKETS": 5,
+    "MANUAL_START": "2026-07-06 11:22:49",
+    "MANUAL_END": "2026-07-06 11:24:54",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 4,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 11:25:56",
+    "MANUAL_END": "2026-07-06 11:29:13",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 5,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 11:30:33",
+    "MANUAL_END": "2026-07-06 11:33:40",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 6,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 11:35:45",
+    "MANUAL_END": "2026-07-06 11:38:22",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 7,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 11:45:50",
+    "MANUAL_END": "2026-07-06 11:48:40",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 0,
+    "BUCKETS": 0,
+    "MANUAL_START": "2026-07-06 11:48:40",
+    "MANUAL_END": "2026-07-06 11:51:12",
+    "TYPE": "NO-VIDEO"
+  },
+  {
+    "LOAD_ID": 8,
+    "BUCKETS": 3,
+    "MANUAL_START": "2026-07-06 11:51:12",
+    "MANUAL_END": "2026-07-06 11:52:09",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 9,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 12:26:52",
+    "MANUAL_END": "2026-07-06 12:29:32",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 10,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 12:30:39",
+    "MANUAL_END": "2026-07-06 12:33:21",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 11,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 12:34:25",
+    "MANUAL_END": "2026-07-06 12:37:28",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 12,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 12:38:38",
+    "MANUAL_END": "2026-07-06 12:41:32",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 0,
+    "BUCKETS": 0,
+    "MANUAL_START": "2026-07-06 12:41:32",
+    "MANUAL_END": "2026-07-06 14:05:37",
+    "TYPE": "NO-VIDEO"
+  },
+  {
+    "LOAD_ID": 13,
+    "BUCKETS": 8,
+    "MANUAL_START": "2026-07-06 14:05:37",
+    "MANUAL_END": "2026-07-06 14:09:53",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKETS": 10,
+    "MANUAL_START": "2026-07-06 14:10:45",
+    "MANUAL_END": "2026-07-06 14:16:09",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 15,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 14:30:52",
+    "MANUAL_END": "2026-07-06 14:33:49",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 16,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 14:35:50",
+    "MANUAL_END": "2026-07-06 14:38:56",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 17,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 14:40:18",
+    "MANUAL_END": "2026-07-06 14:43:55",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 18,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 14:45:21",
+    "MANUAL_END": "2026-07-06 14:48:18",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 19,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 14:49:48",
+    "MANUAL_END": "2026-07-06 14:52:20",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 20,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 14:58:20",
+    "MANUAL_END": "2026-07-06 15:00:58",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKETS": 9,
+    "MANUAL_START": "2026-07-06 15:05:11",
+    "MANUAL_END": "2026-07-06 15:10:02",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 22,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 15:11:40",
+    "MANUAL_END": "2026-07-06 15:14:30",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 23,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 15:15:32",
+    "MANUAL_END": "2026-07-06 15:18:43",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 24,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 15:20:27",
+    "MANUAL_END": "2026-07-06 15:23:48",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 25,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 15:23:48",
+    "MANUAL_END": "2026-07-06 15:27:37",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 26,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 15:29:00",
+    "MANUAL_END": "2026-07-06 15:31:27",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 27,
+    "BUCKETS": 5,
+    "MANUAL_START": "2026-07-06 15:38:21",
+    "MANUAL_END": "2026-07-06 15:41:13",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 28,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 15:42:17",
+    "MANUAL_END": "2026-07-06 15:46:10",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 29,
+    "BUCKETS": 4,
+    "MANUAL_START": "2026-07-06 15:48:25",
+    "MANUAL_END": "2026-07-06 15:50:10",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 30,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 15:51:34",
+    "MANUAL_END": "2026-07-06 15:54:41",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 31,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 15:54:41",
+    "MANUAL_END": "2026-07-06 15:57:55",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 32,
+    "BUCKETS": 5,
+    "MANUAL_START": "2026-07-06 15:59:21",
+    "MANUAL_END": "2026-07-06 16:01:27",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 33,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 16:04:54",
+    "MANUAL_END": "2026-07-06 16:07:28",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 34,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 16:08:37",
+    "MANUAL_END": "2026-07-06 16:11:32",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 35,
+    "BUCKETS": 5,
+    "MANUAL_START": "2026-07-06 16:16:07",
+    "MANUAL_END": "2026-07-06 16:18:03",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 36,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 16:19:36",
+    "MANUAL_END": "2026-07-06 16:23:15",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 37,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 16:25:17",
+    "MANUAL_END": "2026-07-06 16:27:47",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 38,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 16:31:26",
+    "MANUAL_END": "2026-07-06 16:34:48",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 39,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 16:35:58",
+    "MANUAL_END": "2026-07-06 16:38:40",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 40,
+    "BUCKETS": 7,
+    "MANUAL_START": "2026-07-06 16:38:40",
+    "MANUAL_END": "2026-07-06 16:47:33",
+    "TYPE": "LOAD"
+  },
+  {
+    "LOAD_ID": 41,
+    "BUCKETS": 6,
+    "MANUAL_START": "2026-07-06 16:48:37",
+    "MANUAL_END": "2026-07-06 16:51:51",
+    "TYPE": "LOAD"
+  }
+]

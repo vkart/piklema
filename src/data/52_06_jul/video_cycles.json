@@ -1,0 +1,2114 @@
+[
+  {
+    "LOAD_ID": 1,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 11:13:14",
+    "MANUAL_END": "2026-07-06 11:13:30",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 1,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 11:13:30",
+    "MANUAL_END": "2026-07-06 11:14:00",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 1,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 11:14:00",
+    "MANUAL_END": "2026-07-06 11:14:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 1,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 11:14:32",
+    "MANUAL_END": "2026-07-06 11:15:10",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 1,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 11:15:10",
+    "MANUAL_END": "2026-07-06 11:15:38",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 1,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 11:15:38",
+    "MANUAL_END": "2026-07-06 11:16:10",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 2,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 11:17:48",
+    "MANUAL_END": "2026-07-06 11:18:17",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 2,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 11:18:17",
+    "MANUAL_END": "2026-07-06 11:18:53",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 2,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 11:18:53",
+    "MANUAL_END": "2026-07-06 11:19:25",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 2,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 11:19:25",
+    "MANUAL_END": "2026-07-06 11:19:57",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 2,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 11:19:57",
+    "MANUAL_END": "2026-07-06 11:20:29",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 2,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 11:20:29",
+    "MANUAL_END": "2026-07-06 11:21:00",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 3,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 11:22:05",
+    "MANUAL_END": "2026-07-06 11:22:49",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 3,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 11:22:49",
+    "MANUAL_END": "2026-07-06 11:23:21",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 3,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 11:23:21",
+    "MANUAL_END": "2026-07-06 11:23:53",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 3,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 11:23:53",
+    "MANUAL_END": "2026-07-06 11:24:23",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 3,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 11:24:23",
+    "MANUAL_END": "2026-07-06 11:24:54",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 4,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 11:25:44",
+    "MANUAL_END": "2026-07-06 11:25:56",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 4,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 11:25:56",
+    "MANUAL_END": "2026-07-06 11:26:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 4,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 11:26:32",
+    "MANUAL_END": "2026-07-06 11:27:07",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 4,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 11:27:07",
+    "MANUAL_END": "2026-07-06 11:27:38",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 4,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 11:27:38",
+    "MANUAL_END": "2026-07-06 11:28:13",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 4,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 11:28:13",
+    "MANUAL_END": "2026-07-06 11:28:44",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 4,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 11:28:44",
+    "MANUAL_END": "2026-07-06 11:29:13",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 5,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 11:30:10",
+    "MANUAL_END": "2026-07-06 11:30:33",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 5,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 11:30:33",
+    "MANUAL_END": "2026-07-06 11:31:25",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 5,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 11:31:25",
+    "MANUAL_END": "2026-07-06 11:32:00",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 5,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 11:32:00",
+    "MANUAL_END": "2026-07-06 11:32:30",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 5,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 11:32:30",
+    "MANUAL_END": "2026-07-06 11:32:59",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 5,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 11:32:59",
+    "MANUAL_END": "2026-07-06 11:33:40",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 6,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 11:34:36",
+    "MANUAL_END": "2026-07-06 11:35:45",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 6,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 11:35:45",
+    "MANUAL_END": "2026-07-06 11:36:17",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 6,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 11:36:17",
+    "MANUAL_END": "2026-07-06 11:36:50",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 6,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 11:36:50",
+    "MANUAL_END": "2026-07-06 11:37:22",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 6,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 11:37:22",
+    "MANUAL_END": "2026-07-06 11:37:49",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 6,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 11:37:49",
+    "MANUAL_END": "2026-07-06 11:38:22",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 7,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 11:42:45",
+    "MANUAL_END": "2026-07-06 11:45:50",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 7,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 11:45:50",
+    "MANUAL_END": "2026-07-06 11:46:26",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 7,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 11:46:26",
+    "MANUAL_END": "2026-07-06 11:47:03",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 7,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 11:47:03",
+    "MANUAL_END": "2026-07-06 11:47:37",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 7,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 11:47:37",
+    "MANUAL_END": "2026-07-06 11:48:08",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 7,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 11:48:08",
+    "MANUAL_END": "2026-07-06 11:48:40",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 0,
+    "BUCKET_NUM": 0,
+    "MANUAL_START": "2026-07-06 11:48:40",
+    "MANUAL_END": "2026-07-06 11:50:40",
+    "TYPE": "OUT",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 8,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 11:50:40",
+    "MANUAL_END": "2026-07-06 11:50:41",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 8,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 11:50:41",
+    "MANUAL_END": "2026-07-06 11:51:12",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 8,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 11:51:12",
+    "MANUAL_END": "2026-07-06 11:51:39",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 8,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 11:51:39",
+    "MANUAL_END": "2026-07-06 11:52:09",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-1"
+  },
+  {
+    "LOAD_ID": 0,
+    "BUCKET_NUM": 0,
+    "MANUAL_START": "2026-07-06 11:52:09",
+    "MANUAL_END": "2026-07-06 12:26:52",
+    "TYPE": "OUT",
+    "VIDEO": "GAP"
+  },
+  {
+    "LOAD_ID": 9,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 12:26:52",
+    "MANUAL_END": "2026-07-06 12:26:52",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 9,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 12:26:52",
+    "MANUAL_END": "2026-07-06 12:27:21",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 9,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 12:27:21",
+    "MANUAL_END": "2026-07-06 12:27:52",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 9,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 12:27:52",
+    "MANUAL_END": "2026-07-06 12:28:28",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 9,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 12:28:28",
+    "MANUAL_END": "2026-07-06 12:29:01",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 9,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 12:29:01",
+    "MANUAL_END": "2026-07-06 12:29:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 10,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 12:30:21",
+    "MANUAL_END": "2026-07-06 12:30:39",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 10,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 12:30:39",
+    "MANUAL_END": "2026-07-06 12:31:14",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 10,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 12:31:14",
+    "MANUAL_END": "2026-07-06 12:31:45",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 10,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 12:31:45",
+    "MANUAL_END": "2026-07-06 12:32:20",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 10,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 12:32:20",
+    "MANUAL_END": "2026-07-06 12:32:54",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 10,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 12:32:54",
+    "MANUAL_END": "2026-07-06 12:33:21",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 11,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 12:34:15",
+    "MANUAL_END": "2026-07-06 12:34:25",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 11,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 12:34:25",
+    "MANUAL_END": "2026-07-06 12:34:55",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 11,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 12:34:55",
+    "MANUAL_END": "2026-07-06 12:35:28",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 11,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 12:35:28",
+    "MANUAL_END": "2026-07-06 12:35:58",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 11,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 12:35:58",
+    "MANUAL_END": "2026-07-06 12:36:30",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 11,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 12:36:30",
+    "MANUAL_END": "2026-07-06 12:37:01",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 11,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 12:37:01",
+    "MANUAL_END": "2026-07-06 12:37:28",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 12,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 12:38:14",
+    "MANUAL_END": "2026-07-06 12:38:38",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 12,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 12:38:38",
+    "MANUAL_END": "2026-07-06 12:39:21",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 12,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 12:39:21",
+    "MANUAL_END": "2026-07-06 12:39:53",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 12,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 12:39:53",
+    "MANUAL_END": "2026-07-06 12:40:25",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 12,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 12:40:25",
+    "MANUAL_END": "2026-07-06 12:41:00",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 12,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 12:41:00",
+    "MANUAL_END": "2026-07-06 12:41:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 0,
+    "BUCKET_NUM": 0,
+    "MANUAL_START": "2026-07-06 12:41:32",
+    "MANUAL_END": "2026-07-06 14:05:37",
+    "TYPE": "OUT",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 13,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 14:05:37",
+    "MANUAL_END": "2026-07-06 14:05:37",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 13,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 14:05:37",
+    "MANUAL_END": "2026-07-06 14:06:07",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 13,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 14:06:07",
+    "MANUAL_END": "2026-07-06 14:06:42",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 13,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 14:06:42",
+    "MANUAL_END": "2026-07-06 14:07:18",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 13,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 14:07:18",
+    "MANUAL_END": "2026-07-06 14:07:57",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 13,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 14:07:57",
+    "MANUAL_END": "2026-07-06 14:08:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 13,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 14:08:32",
+    "MANUAL_END": "2026-07-06 14:09:08",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 13,
+    "BUCKET_NUM": 8,
+    "MANUAL_START": "2026-07-06 14:09:08",
+    "MANUAL_END": "2026-07-06 14:09:53",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 14:10:29",
+    "MANUAL_END": "2026-07-06 14:10:45",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 14:10:45",
+    "MANUAL_END": "2026-07-06 14:11:20",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 14:11:20",
+    "MANUAL_END": "2026-07-06 14:11:50",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 14:11:50",
+    "MANUAL_END": "2026-07-06 14:12:24",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 14:12:24",
+    "MANUAL_END": "2026-07-06 14:12:57",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 14:12:57",
+    "MANUAL_END": "2026-07-06 14:13:38",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 14:13:38",
+    "MANUAL_END": "2026-07-06 14:14:09",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 8,
+    "MANUAL_START": "2026-07-06 14:14:09",
+    "MANUAL_END": "2026-07-06 14:14:41",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 9,
+    "MANUAL_START": "2026-07-06 14:14:41",
+    "MANUAL_END": "2026-07-06 14:15:24",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 14,
+    "BUCKET_NUM": 10,
+    "MANUAL_START": "2026-07-06 14:15:24",
+    "MANUAL_END": "2026-07-06 14:16:09",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-2"
+  },
+  {
+    "LOAD_ID": 0,
+    "BUCKET_NUM": 0,
+    "MANUAL_START": "2026-07-06 14:16:09",
+    "MANUAL_END": "2026-07-06 14:30:52",
+    "TYPE": "OUT",
+    "VIDEO": "GAP"
+  },
+  {
+    "LOAD_ID": 15,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 14:29:21",
+    "MANUAL_END": "2026-07-06 14:30:52",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 15,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 14:30:52",
+    "MANUAL_END": "2026-07-06 14:31:27",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 15,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 14:31:27",
+    "MANUAL_END": "2026-07-06 14:31:57",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 15,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 14:31:57",
+    "MANUAL_END": "2026-07-06 14:32:23",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 15,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 14:32:23",
+    "MANUAL_END": "2026-07-06 14:32:52",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 15,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 14:32:52",
+    "MANUAL_END": "2026-07-06 14:33:18",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 15,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 14:33:18",
+    "MANUAL_END": "2026-07-06 14:33:49",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 16,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 14:35:25",
+    "MANUAL_END": "2026-07-06 14:35:50",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 16,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 14:35:50",
+    "MANUAL_END": "2026-07-06 14:36:26",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 16,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 14:36:26",
+    "MANUAL_END": "2026-07-06 14:36:57",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 16,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 14:36:57",
+    "MANUAL_END": "2026-07-06 14:37:27",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 16,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 14:37:27",
+    "MANUAL_END": "2026-07-06 14:37:56",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 16,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 14:37:56",
+    "MANUAL_END": "2026-07-06 14:38:26",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 16,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 14:38:26",
+    "MANUAL_END": "2026-07-06 14:38:56",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 17,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 14:39:48",
+    "MANUAL_END": "2026-07-06 14:40:18",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 17,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 14:40:18",
+    "MANUAL_END": "2026-07-06 14:40:52",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 17,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 14:40:52",
+    "MANUAL_END": "2026-07-06 14:41:24",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 17,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 14:41:24",
+    "MANUAL_END": "2026-07-06 14:41:57",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 17,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 14:41:57",
+    "MANUAL_END": "2026-07-06 14:42:24",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 17,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 14:42:24",
+    "MANUAL_END": "2026-07-06 14:42:54",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 17,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 14:42:54",
+    "MANUAL_END": "2026-07-06 14:43:55",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 18,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 14:44:58",
+    "MANUAL_END": "2026-07-06 14:45:21",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 18,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 14:45:21",
+    "MANUAL_END": "2026-07-06 14:45:48",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 18,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 14:45:48",
+    "MANUAL_END": "2026-07-06 14:46:14",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 18,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 14:46:14",
+    "MANUAL_END": "2026-07-06 14:46:43",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 18,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 14:46:43",
+    "MANUAL_END": "2026-07-06 14:47:13",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 18,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 14:47:13",
+    "MANUAL_END": "2026-07-06 14:47:44",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 18,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 14:47:44",
+    "MANUAL_END": "2026-07-06 14:48:18",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 19,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 14:49:12",
+    "MANUAL_END": "2026-07-06 14:49:48",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 19,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 14:49:48",
+    "MANUAL_END": "2026-07-06 14:50:18",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 19,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 14:50:18",
+    "MANUAL_END": "2026-07-06 14:50:50",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 19,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 14:50:50",
+    "MANUAL_END": "2026-07-06 14:51:15",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 19,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 14:51:15",
+    "MANUAL_END": "2026-07-06 14:51:46",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 19,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 14:51:46",
+    "MANUAL_END": "2026-07-06 14:52:20",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 20,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 14:54:50",
+    "MANUAL_END": "2026-07-06 14:58:20",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 20,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 14:58:20",
+    "MANUAL_END": "2026-07-06 14:59:10",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 20,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 14:59:10",
+    "MANUAL_END": "2026-07-06 14:59:37",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 20,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 14:59:37",
+    "MANUAL_END": "2026-07-06 15:00:04",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 20,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:00:04",
+    "MANUAL_END": "2026-07-06 15:00:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 20,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:00:32",
+    "MANUAL_END": "2026-07-06 15:00:58",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:01:38",
+    "MANUAL_END": "2026-07-06 15:05:11",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:05:11",
+    "MANUAL_END": "2026-07-06 15:05:42",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:05:42",
+    "MANUAL_END": "2026-07-06 15:06:12",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:06:12",
+    "MANUAL_END": "2026-07-06 15:06:42",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:06:42",
+    "MANUAL_END": "2026-07-06 15:07:15",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:07:15",
+    "MANUAL_END": "2026-07-06 15:07:47",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 15:07:47",
+    "MANUAL_END": "2026-07-06 15:08:45",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKET_NUM": 8,
+    "MANUAL_START": "2026-07-06 15:08:45",
+    "MANUAL_END": "2026-07-06 15:09:13",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 21,
+    "BUCKET_NUM": 9,
+    "MANUAL_START": "2026-07-06 15:09:13",
+    "MANUAL_END": "2026-07-06 15:10:02",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-3"
+  },
+  {
+    "LOAD_ID": 22,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:11:40",
+    "MANUAL_END": "2026-07-06 15:11:40",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 22,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:11:40",
+    "MANUAL_END": "2026-07-06 15:12:16",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 22,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:12:16",
+    "MANUAL_END": "2026-07-06 15:12:50",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 22,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:12:50",
+    "MANUAL_END": "2026-07-06 15:13:18",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 22,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:13:18",
+    "MANUAL_END": "2026-07-06 15:13:53",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 22,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:13:53",
+    "MANUAL_END": "2026-07-06 15:14:30",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 23,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:15:32",
+    "MANUAL_END": "2026-07-06 15:15:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 23,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:15:32",
+    "MANUAL_END": "2026-07-06 15:16:02",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 23,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:16:02",
+    "MANUAL_END": "2026-07-06 15:16:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 23,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:16:32",
+    "MANUAL_END": "2026-07-06 15:17:09",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 23,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:17:09",
+    "MANUAL_END": "2026-07-06 15:17:39",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 23,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:17:39",
+    "MANUAL_END": "2026-07-06 15:18:13",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 23,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 15:18:13",
+    "MANUAL_END": "2026-07-06 15:18:43",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 24,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:20:27",
+    "MANUAL_END": "2026-07-06 15:20:27",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 24,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:20:27",
+    "MANUAL_END": "2026-07-06 15:20:57",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 24,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:20:57",
+    "MANUAL_END": "2026-07-06 15:21:30",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 24,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:21:30",
+    "MANUAL_END": "2026-07-06 15:21:59",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 24,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:21:59",
+    "MANUAL_END": "2026-07-06 15:22:27",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 24,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:22:27",
+    "MANUAL_END": "2026-07-06 15:23:04",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 24,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 15:23:04",
+    "MANUAL_END": "2026-07-06 15:23:48",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 25,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:23:48",
+    "MANUAL_END": "2026-07-06 15:23:48",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 25,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:23:48",
+    "MANUAL_END": "2026-07-06 15:23:48",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 25,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:23:48",
+    "MANUAL_END": "2026-07-06 15:25:35",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 25,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:25:35",
+    "MANUAL_END": "2026-07-06 15:26:04",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 25,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:26:04",
+    "MANUAL_END": "2026-07-06 15:26:34",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 25,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:26:34",
+    "MANUAL_END": "2026-07-06 15:27:04",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 25,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 15:27:04",
+    "MANUAL_END": "2026-07-06 15:27:37",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 26,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:29:00",
+    "MANUAL_END": "2026-07-06 15:29:00",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 26,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:29:00",
+    "MANUAL_END": "2026-07-06 15:29:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 26,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:29:32",
+    "MANUAL_END": "2026-07-06 15:29:59",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 26,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:29:59",
+    "MANUAL_END": "2026-07-06 15:30:29",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 26,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:30:29",
+    "MANUAL_END": "2026-07-06 15:30:58",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 26,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:30:58",
+    "MANUAL_END": "2026-07-06 15:31:27",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 27,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:38:21",
+    "MANUAL_END": "2026-07-06 15:38:21",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 27,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:38:21",
+    "MANUAL_END": "2026-07-06 15:39:07",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 27,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:39:07",
+    "MANUAL_END": "2026-07-06 15:39:51",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 27,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:39:51",
+    "MANUAL_END": "2026-07-06 15:40:40",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 27,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:40:40",
+    "MANUAL_END": "2026-07-06 15:41:13",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 28,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:42:17",
+    "MANUAL_END": "2026-07-06 15:42:17",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 28,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:42:17",
+    "MANUAL_END": "2026-07-06 15:42:52",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 28,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:42:52",
+    "MANUAL_END": "2026-07-06 15:43:41",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 28,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:43:41",
+    "MANUAL_END": "2026-07-06 15:44:26",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 28,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:44:26",
+    "MANUAL_END": "2026-07-06 15:45:02",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 28,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:45:02",
+    "MANUAL_END": "2026-07-06 15:45:39",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 28,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 15:45:39",
+    "MANUAL_END": "2026-07-06 15:46:10",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 29,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:48:25",
+    "MANUAL_END": "2026-07-06 15:48:25",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 29,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:48:25",
+    "MANUAL_END": "2026-07-06 15:49:03",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 29,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:49:03",
+    "MANUAL_END": "2026-07-06 15:49:42",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 29,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:49:42",
+    "MANUAL_END": "2026-07-06 15:50:10",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 30,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:51:34",
+    "MANUAL_END": "2026-07-06 15:51:34",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 30,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:51:34",
+    "MANUAL_END": "2026-07-06 15:52:11",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 30,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:52:11",
+    "MANUAL_END": "2026-07-06 15:52:46",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 30,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:52:46",
+    "MANUAL_END": "2026-07-06 15:53:31",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 30,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:53:31",
+    "MANUAL_END": "2026-07-06 15:54:05",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 30,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:54:05",
+    "MANUAL_END": "2026-07-06 15:54:41",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 31,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:54:41",
+    "MANUAL_END": "2026-07-06 15:54:41",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 31,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:54:41",
+    "MANUAL_END": "2026-07-06 15:55:59",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 31,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:55:59",
+    "MANUAL_END": "2026-07-06 15:56:30",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 31,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 15:56:30",
+    "MANUAL_END": "2026-07-06 15:56:58",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 31,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 15:56:58",
+    "MANUAL_END": "2026-07-06 15:57:26",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 31,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 15:57:26",
+    "MANUAL_END": "2026-07-06 15:57:55",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 32,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 15:59:21",
+    "MANUAL_END": "2026-07-06 15:59:21",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 32,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 15:59:21",
+    "MANUAL_END": "2026-07-06 15:59:57",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 32,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 15:59:57",
+    "MANUAL_END": "2026-07-06 16:00:25",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 32,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:00:25",
+    "MANUAL_END": "2026-07-06 16:00:53",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 32,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 16:00:53",
+    "MANUAL_END": "2026-07-06 16:01:27",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 33,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:04:54",
+    "MANUAL_END": "2026-07-06 16:04:54",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 33,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:04:54",
+    "MANUAL_END": "2026-07-06 16:05:25",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 33,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:05:25",
+    "MANUAL_END": "2026-07-06 16:06:00",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 33,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:06:00",
+    "MANUAL_END": "2026-07-06 16:06:29",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 33,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 16:06:29",
+    "MANUAL_END": "2026-07-06 16:06:56",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 33,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 16:06:56",
+    "MANUAL_END": "2026-07-06 16:07:28",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 34,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:07:28",
+    "MANUAL_END": "2026-07-06 16:07:28",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 34,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:07:28",
+    "MANUAL_END": "2026-07-06 16:08:37",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 34,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:08:37",
+    "MANUAL_END": "2026-07-06 16:09:11",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-4"
+  },
+  {
+    "LOAD_ID": 34,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:09:45",
+    "MANUAL_END": "2026-07-06 16:09:45",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 34,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:09:45",
+    "MANUAL_END": "2026-07-06 16:10:30",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 34,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:10:30",
+    "MANUAL_END": "2026-07-06 16:11:03",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 34,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:11:03",
+    "MANUAL_END": "2026-07-06 16:11:32",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 35,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:16:07",
+    "MANUAL_END": "2026-07-06 16:16:07",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 35,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:16:07",
+    "MANUAL_END": "2026-07-06 16:16:42",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 35,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:16:42",
+    "MANUAL_END": "2026-07-06 16:17:09",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 35,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:17:09",
+    "MANUAL_END": "2026-07-06 16:17:35",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 35,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 16:17:35",
+    "MANUAL_END": "2026-07-06 16:18:03",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 36,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:19:36",
+    "MANUAL_END": "2026-07-06 16:19:36",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 36,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:19:36",
+    "MANUAL_END": "2026-07-06 16:21:22",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 36,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:21:22",
+    "MANUAL_END": "2026-07-06 16:21:47",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 36,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:21:47",
+    "MANUAL_END": "2026-07-06 16:22:17",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 36,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 16:22:17",
+    "MANUAL_END": "2026-07-06 16:22:45",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 36,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 16:22:45",
+    "MANUAL_END": "2026-07-06 16:23:15",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 37,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:25:17",
+    "MANUAL_END": "2026-07-06 16:25:17",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 37,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:25:17",
+    "MANUAL_END": "2026-07-06 16:25:47",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 37,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:25:47",
+    "MANUAL_END": "2026-07-06 16:26:15",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 37,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:26:15",
+    "MANUAL_END": "2026-07-06 16:26:44",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 37,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 16:26:44",
+    "MANUAL_END": "2026-07-06 16:27:13",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 37,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 16:27:13",
+    "MANUAL_END": "2026-07-06 16:27:47",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 38,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:31:26",
+    "MANUAL_END": "2026-07-06 16:31:26",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 38,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:31:26",
+    "MANUAL_END": "2026-07-06 16:32:01",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 38,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:32:01",
+    "MANUAL_END": "2026-07-06 16:32:37",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 38,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:32:37",
+    "MANUAL_END": "2026-07-06 16:33:04",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 38,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 16:33:04",
+    "MANUAL_END": "2026-07-06 16:33:30",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 38,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 16:33:30",
+    "MANUAL_END": "2026-07-06 16:34:02",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 38,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 16:34:02",
+    "MANUAL_END": "2026-07-06 16:34:48",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 39,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:35:58",
+    "MANUAL_END": "2026-07-06 16:35:58",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 39,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:35:58",
+    "MANUAL_END": "2026-07-06 16:36:33",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 39,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:36:33",
+    "MANUAL_END": "2026-07-06 16:37:04",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 39,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:37:04",
+    "MANUAL_END": "2026-07-06 16:37:42",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 39,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 16:37:42",
+    "MANUAL_END": "2026-07-06 16:38:09",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 39,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 16:38:09",
+    "MANUAL_END": "2026-07-06 16:38:40",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 40,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:38:40",
+    "MANUAL_END": "2026-07-06 16:38:40",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 40,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:38:40",
+    "MANUAL_END": "2026-07-06 16:44:55",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 40,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:44:55",
+    "MANUAL_END": "2026-07-06 16:45:26",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 40,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:45:26",
+    "MANUAL_END": "2026-07-06 16:46:00",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 40,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 16:46:00",
+    "MANUAL_END": "2026-07-06 16:46:30",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 40,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 16:46:30",
+    "MANUAL_END": "2026-07-06 16:47:02",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 40,
+    "BUCKET_NUM": 7,
+    "MANUAL_START": "2026-07-06 16:47:02",
+    "MANUAL_END": "2026-07-06 16:47:33",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 41,
+    "BUCKET_NUM": 1,
+    "MANUAL_START": "2026-07-06 16:48:37",
+    "MANUAL_END": "2026-07-06 16:48:37",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 41,
+    "BUCKET_NUM": 2,
+    "MANUAL_START": "2026-07-06 16:48:37",
+    "MANUAL_END": "2026-07-06 16:49:20",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 41,
+    "BUCKET_NUM": 3,
+    "MANUAL_START": "2026-07-06 16:49:20",
+    "MANUAL_END": "2026-07-06 16:50:02",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 41,
+    "BUCKET_NUM": 4,
+    "MANUAL_START": "2026-07-06 16:50:02",
+    "MANUAL_END": "2026-07-06 16:50:40",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 41,
+    "BUCKET_NUM": 5,
+    "MANUAL_START": "2026-07-06 16:50:40",
+    "MANUAL_END": "2026-07-06 16:51:20",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  },
+  {
+    "LOAD_ID": 41,
+    "BUCKET_NUM": 6,
+    "MANUAL_START": "2026-07-06 16:51:20",
+    "MANUAL_END": "2026-07-06 16:51:51",
+    "TYPE": "LOAD",
+    "VIDEO": "VIDEO-5"
+  }
+]

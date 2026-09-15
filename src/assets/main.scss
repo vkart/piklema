@@ -32,6 +32,13 @@ a {
   color: $color-black;
 }
 
+button,
+input,
+label,
+select {
+  font-family: $font;
+}
+
 #app {
   margin: 0 auto;
   padding: $microgrid;

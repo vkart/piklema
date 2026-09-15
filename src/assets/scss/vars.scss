@@ -1,21 +1,11 @@
 $MOBILE-BREAKPOINT: 776px;
-
-$microgrid: 4px;
-$grid: 16px;
-$gutter: 12px;
-$gap: $grid + 2 * $gutter;
-
 $app-width-mobile: 390px;
 
-$font: 'Typewriter';
+$microgrid: 8px;
+$grid: 48px;
+$gutter: 8px;
 
-$color-white: #FFFFFF;
-$color-black: #000000;
-$color-blue: #000AFF;
-$color-yellow: #FAFF00;
-$color-mustard: #E6EA05;
-$color-olive: #969900;
-$color-grey: #C4C4C4;
-$color-green: #00FF00;
-$color-pink: #FF00F5;
-$color-red: #E00000;
+$font: 'IBM Plex Mono';
+
+$color-white: #fff;
+$color-black: #000;

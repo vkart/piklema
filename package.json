@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.0",
+    "dateformat": "^5.0.3",
     "sass": "^1.62.0",
     "typograf": "^7.2.0",
     "vue": "^3.4.10",
